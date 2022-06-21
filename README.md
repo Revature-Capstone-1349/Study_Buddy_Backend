@@ -1,1 +1,1 @@
-# Study_Buddy_Backend
+# Study Buddy Backend
