@@ -1,3 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+Study_Buddy_Backend/src/main/resources/application.properties
