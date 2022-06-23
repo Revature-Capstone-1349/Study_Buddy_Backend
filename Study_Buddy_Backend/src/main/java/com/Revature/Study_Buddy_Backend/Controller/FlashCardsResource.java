@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/flashcards")
 public class FlashCardsResource {
-
+    @Autowired
     private FlashCardsService flashCardsService;
     @GetMapping
     public ResponseEntity<List<FlashCards>>getAllFlashCards() {
