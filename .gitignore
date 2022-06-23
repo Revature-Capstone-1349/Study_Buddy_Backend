@@ -1,4 +1,5 @@
 Study_Buddy_Backend/src/main/resources/application.properties
+<<<<<<< HEAD
 Study_Buddy_Backend/src/main/java/com/Revature/Study_Buddy_Backend/Service/.DS_Store
 Study_Buddy_Backend/src/main/java/com/Revature/Study_Buddy_Backend/.DS_Store
 Study_Buddy_Backend/src/main/java/com/Revature/.DS_Store
@@ -8,3 +9,5 @@ Study_Buddy_Backend/src/main/.DS_Store
 Study_Buddy_Backend/src/.DS_Store
 Study_Buddy_Backend/.DS_Store
 .DS_Store
+=======
+>>>>>>> notes
