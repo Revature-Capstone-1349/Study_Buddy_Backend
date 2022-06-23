@@ -12,13 +12,12 @@ public class FlashCards {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
        
-        private Long fcardId;
+        private Long fCardId;
        
         private String term;
         
         private String def;
-        
-        private String Field;
+
         //@ManyToOne (fetch = FetchType.LAZY, optional = false)
         //@JoinColumn(name= "setId", nullable = false)
         private Long setId;
@@ -26,12 +25,11 @@ public class FlashCards {
         public FlashCards() {
 
         }
-        public FlashCards (Long fcardId, Long setId, String term, String def, String Field){
-            this.fcardId = fcardId;
+        public FlashCards (Long fCardId, Long setId, String term, String def){
+            this.fCardId = fCardId;
             this.setId = setId;
             this.term = term;
             this.def = def;
-            this.Field = Field;
         }
 
     }
