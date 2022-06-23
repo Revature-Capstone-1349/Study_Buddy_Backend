@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 //dto
 import java.util.List;
 
-@Service
+//@Service
 public interface FlashCardsService{
     List<FlashCards> getAllFlashCards();
 

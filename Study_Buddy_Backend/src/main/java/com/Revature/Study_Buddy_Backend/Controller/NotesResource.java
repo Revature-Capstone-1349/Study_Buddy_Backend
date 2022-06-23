@@ -15,7 +15,6 @@ import java.util.List;
 @RequestMapping("/api/Notes")
 public class NotesResource {
 
-    @Autowired
     private NotesService notesService;
 
     @GetMapping

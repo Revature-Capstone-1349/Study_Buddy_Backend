@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/flashcards")
+//@RestController
+//@RequestMapping("/api/flashcards")
 public class FlashCardsResource {
 
     private FlashCardsService flashCardsService;

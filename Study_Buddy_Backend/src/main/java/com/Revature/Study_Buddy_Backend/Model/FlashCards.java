@@ -5,9 +5,9 @@ import javax.persistence.*;
 import java.util.List;
 
 
-    @Entity
-    @Data
-    @Table(name = "FlashCards")
+//    @Entity
+//    @Data
+//    @Table(name = "FlashCards")
 public class FlashCards {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
