@@ -15,19 +15,22 @@ import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 public class SetsResource {
 
     private SetsService setsService;
+    public SetsResource(SetsService setsService){
+        this.setsService = setsService;
+    }
 
     @GetMapping("/listSets")
     public ResponseEntity<List<Sets>> getListSets() {
-        return new ResponseEntity<>(setsService.getallSets(), HttpStatus.OK);
+        return new ResponseEntity<>(setsService.getAllSets(), HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity<Sets>addListSets(@RequestBody Sets newSets) {
         return new ResponseEntity<>(setsService.addSets(newSets), HttpStatus.OK);
     }
-
-    public ResponseEntity<Sets>updateListSets(Sets sets){
-        return new ResponseEntity<>(setsService.update(sets),HttpStatus.OK);
+    @PutMapping
+    public ResponseEntity<Sets>updateListSets(@RequestBody Sets sets){
+        return new ResponseEntity<>(setsService.updateSets(sets),HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")

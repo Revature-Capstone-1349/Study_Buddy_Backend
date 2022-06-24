@@ -13,7 +13,7 @@ public class SetsService {
     @Autowired
     private SetsRepo setsRepo;
 
-    public List<Sets> getallSets(){
+    public List<Sets> getAllSets(){
         return setsRepo.findAll();
     }
 
@@ -21,11 +21,11 @@ public class SetsService {
         return setsRepo.save(setSets);
     }
 
-    public Sets update(Sets updateSets){
+    public Sets updateSets(Sets updateSets){
         return setsRepo.save(updateSets);
         
     }
     public void deleteSets(Long deleteSets){
-        setsRepo.deleteSets(deleteSets);
+        setsRepo.deleteBysetId(deleteSets);
     }
 }
