@@ -21,11 +21,15 @@ public class SetsService {
         return setsRepo.save(setSets);
     }
 
+    //try catch, check if user exist, if not return null
     public Sets updateSets(Sets updateSets){
         return setsRepo.save(updateSets);
-        
     }
+
+    //try catch, check if user exist, if not return null
     public void deleteSets(Long deleteSets){
         setsRepo.deleteBysetId(deleteSets);
     }
+
+    //method for finding new list
 }
