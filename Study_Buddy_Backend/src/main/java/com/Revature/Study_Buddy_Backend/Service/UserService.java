@@ -27,6 +27,7 @@ public class UserService {
 
     //try catch find user first if not exist return null
     public User updateUser(User user ){
+
        return userRepo.save(user);
     }
 
