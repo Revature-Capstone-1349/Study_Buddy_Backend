@@ -16,7 +16,11 @@ public class FlashCardsService{
 
     // try catch if exist
     public FlashCards getByfCardId (Long id) {
-        return flashCardsRepo.findByfCardId(id);
+        try {
+            return flashCardsRepo.findByfCardId(id);
+        } catch (Exception e) {
+            return flashCardsRepo.findByfCardId(id);
+        }
     }
     public FlashCards addFlashCards (FlashCards flashCards){
         return flashCardsRepo.save(flashCards);
@@ -24,12 +28,21 @@ public class FlashCardsService{
 
     //try catch find flash card if not exist return null
     public FlashCards updateFlashCards (FlashCards flashCards){
-        return flashCardsRepo.save(flashCards);
+            try{
+                return flashCardsRepo.save(flashCards);
+            } catch (Exception e){
+                return flashCardsRepo.save(flashCards);
+        }
+
     }
 
     //try catch find flash card if not exist return null
     public void deleteByfCardId (Long fCardId) {
-        flashCardsRepo.deleteByfCardId(fCardId);
+        try {
+            flashCardsRepo.deleteByfCardId(fCardId);
+        } catch (Exception e) {
+            flashCardsRepo.deleteByfCardId(fCardId);
+        }
     }
 
     /*
