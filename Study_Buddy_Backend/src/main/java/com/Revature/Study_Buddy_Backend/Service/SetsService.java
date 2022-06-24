@@ -1,32 +1,31 @@
 package com.Revature.Study_Buddy_Backend.Service;
 
 import com.Revature.Study_Buddy_Backend.Model.Sets;
-import com.Revature.Study_Buddy_Backend.Repository.SetRepo;
+import com.Revature.Study_Buddy_Backend.Repository.SetsRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Set;
 
 @Service
-public class SetService {
+public class SetsService {
     @Autowired
-    private SetRepo setRepo;
+    private SetsRepo setsRepo;
 
-    public List<Sets> getallSetsName(){
-        return allSetsame;
+    public List<Sets> getallSets(){
+        return setsRepo.findAll();
     }
 
     public Sets addSets(Sets setSets) {
-        return setRepo.save(setSets);
+        return setsRepo.save(setSets);
     }
 
     public Sets update(Sets updateSets){
-        return setRepo.save(updateSets);
+        return setsRepo.save(updateSets);
         
     }
-    public Sets deleteSets;(Sets deleteSets){
-
+    public void deleteSets(Long deleteSets){
+        setsRepo.deleteSets(deleteSets);
     }
 }

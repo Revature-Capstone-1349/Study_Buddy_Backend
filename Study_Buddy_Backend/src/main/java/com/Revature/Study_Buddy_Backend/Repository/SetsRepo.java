@@ -6,10 +6,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface SetRepo extends JpaRepository <Sets, Long>{
+public interface SetsRepo extends JpaRepository <Sets, Long>{
     Sets findBySetId(Long setId);
     List<Sets> findsetNameByUserID(Long userId);
-
+    void deleteSets(Long setsId);
+    List<Sets> byUserId(Long userId);
 
 
 }
