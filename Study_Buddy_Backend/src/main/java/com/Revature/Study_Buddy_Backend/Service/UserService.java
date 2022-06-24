@@ -25,7 +25,7 @@ public class UserService {
     }
 
     public User updateUser(User user ){
-//        User Study_Buddy=userRepo.findById(user.getUserid()).get();
+
 
        return userRepo.save(user);
     }
