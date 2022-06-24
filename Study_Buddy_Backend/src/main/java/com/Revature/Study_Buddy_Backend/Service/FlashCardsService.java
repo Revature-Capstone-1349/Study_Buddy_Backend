@@ -27,7 +27,7 @@ public class FlashCardsService{
         return flashCardsRepo.save(flashCards);
     }
 
-    //try catch find flash card if
+    //try catch find flash card if not exist return null
     public void deleteByfCardId (Long fCardId) {
         flashCardsRepo.deleteByfCardId(fCardId);
     }
@@ -40,4 +40,12 @@ public class FlashCardsService{
      */
 
 
+    /*
+    try catch if null or size is 0
+    implement findBysetId
+
+    user's set first then other's set
+    view by the userId and privacy is "public"
+    return new list
+     */
 }
