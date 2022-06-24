@@ -17,6 +17,10 @@ public class NotesService {
         return notesRepo.findAll();
     }
 
+    /*
+    try catch find note, if not return null
+    fix with repository method findBynotesId
+     */
     public Notes getNotesById(Long id){
         return notesRepo.findById(id).get();
     }
@@ -25,11 +29,17 @@ public class NotesService {
         return notesRepo.save(notes);
     }
 
+    //try catch find note, if not return null
     public Notes updateNotes(Notes notes) {
         return notesRepo.save(notes);
     }
-
+    //try catch find note, if not return null
     public void deleteNotes(Long notesId){
         notesRepo.deleteBynotesId(notesId);
     }
+
+    /*
+    return a list of notes by set id
+    with repository findBySetId
+     */
 }
