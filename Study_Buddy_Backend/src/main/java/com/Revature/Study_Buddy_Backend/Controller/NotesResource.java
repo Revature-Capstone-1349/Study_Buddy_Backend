@@ -21,6 +21,9 @@ public class NotesResource {
         return new ResponseEntity<>(notesService.getAllNotes(), HttpStatus.OK);
     }
 
+    /*
+    try catch null return/ no content
+     */
     @GetMapping("/{id}")
     public ResponseEntity<Notes> getNotesById(@PathVariable("id")Long id){
         return new ResponseEntity<>(notesService.getNotesById(id),HttpStatus.OK);
@@ -31,14 +34,28 @@ public class NotesResource {
         return new ResponseEntity<>(notesService.addNotes(notes),HttpStatus.OK);
     }
 
+    /*
+    try catch null return/ no content
+     */
     @PutMapping
-    public ResponseEntity<Notes> getNotes(@RequestBody Notes notes){
+    public ResponseEntity<Notes> updatesNotes(@RequestBody Notes notes){
         return new ResponseEntity<>(notesService.updateNotes(notes),HttpStatus.OK);
     }
 
+
+    /*
+    try catch null return/ no content
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteNotes(@PathVariable("id")Long notesId){
         notesService.deleteNotes(notesId);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+
+    /*
+    GetMapping
+    get note by set id
+    try catch null return/ no content
+     */
 }

@@ -59,4 +59,15 @@ public class FlashCardsResource {
     call getAllFlashCards return list base off setId
      */
 
+
+    /*
+    getMapping
+    try catch if null or size is 0
+    implement findBysetId
+
+    call getAllFlashCards
+    view by the userId and privacy is "public"
+    return new list
+     */
+
 }
