@@ -11,4 +11,5 @@ public interface UserRepo extends JpaRepository<User,Long> {
     2. User findByuserId
     3. User findByEmailAndPasswd
      */
+    
 }
