@@ -1,1 +1,3 @@
-# Study Buddy Backend
+## Study Buddy Backend
+
+Configure the resouvs

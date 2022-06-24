@@ -2,6 +2,7 @@ package com.Revature.Study_Buddy_Backend.Controller;
 
 import com.Revature.Study_Buddy_Backend.Model.Sets;
 import com.Revature.Study_Buddy_Backend.Service.SetsService;
+import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,16 +10,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
-
+@AllArgsConstructor
 @RequestMapping("/api/Sets")
 @RestController
 public class SetsResource {
 
     private SetsService setsService;
-    public SetsResource(SetsService setsService){
-        this.setsService = setsService;
-    }
-
     @GetMapping("/listSets")
     public ResponseEntity<List<Sets>> getListSets() {
         return new ResponseEntity<>(setsService.getAllSets(), HttpStatus.OK);
