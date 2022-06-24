@@ -11,13 +11,12 @@ import java.util.List;
 //@Service
 public class FlashCardsServiceImpl implements FlashCardsService{
     @Autowired
-    private FlashCardsRepo flashCardsRepo;
+    private final FlashCardsRepo flashCardsRepo;
+    public FlashCardsServiceImpl(FlashCardsRepo flashCardsRepo){ this.flashCardsRepo = flashCardsRepo;}
     public List<FlashCards> getAllFlashCards(){
         return flashCardsRepo.findAll();
     }
-    public FlashCards getFlashCardsbyid (Long id)
-
-    {
+    public FlashCards getByfCardId (Long id) {
         return flashCardsRepo.findByfCardId(id);
     }
     public FlashCards addFlashCards (FlashCards flashCards){
@@ -27,7 +26,7 @@ public class FlashCardsServiceImpl implements FlashCardsService{
         return flashCardsRepo.save(flashCards);
     }
 
-    public void deleteFlashCards (Long fCardId) {
+    public void deleteByfCardId (Long fCardId) {
         flashCardsRepo.deleteByfCardId(fCardId);
     }
 }
