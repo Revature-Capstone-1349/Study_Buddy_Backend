@@ -19,32 +19,31 @@ public class UserResource {
        return new ResponseEntity<>(userService.getAllUser(),HttpStatus.OK);
 
     }
+
     @GetMapping("/{userid}")
     public ResponseEntity<User>getUserById(@PathVariable("userid")Long id){
         User user= userService.getUserById(id);
         if(user!=null){
             return new ResponseEntity<>(user,HttpStatus.OK);
         }
-
          return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-
     }
+
     @PostMapping("/add")
     public ResponseEntity<User>addUser(@RequestBody User user){
         return new ResponseEntity<>(userService.addUser(user),HttpStatus.CREATED);
     }
+
     @PutMapping("/update")
     public ResponseEntity<User>updateUser(@RequestBody User user) {
-
         User userexist = userService.getUserById(user.getUserid());
         if (userexist != null) {
             return new ResponseEntity<>(userService.updateUser(user), HttpStatus.OK);
-
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-    @DeleteMapping("/delete/{id}")
 
+    @DeleteMapping("/delete/{id}")
    public ResponseEntity<?>deleteUser(@PathVariable("id") Long id){
         User userexist1=userService.getUserById(id);
         if(userexist1!=null) {
