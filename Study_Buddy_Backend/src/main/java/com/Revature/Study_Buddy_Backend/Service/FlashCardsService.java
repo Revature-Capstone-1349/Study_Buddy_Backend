@@ -53,12 +53,13 @@ public class FlashCardsService{
      */
 
 
-    /*
-    try catch if null or size is 0
-    implement findBysetId
+   public List<FlashCards> getFlashsBySetId(Long setId){
+       try {
+           return flashCardsRepo.findBySetId(setId);
+       }
+       catch (Exception e){
+           return null;
+       }
+   }
 
-    user's set first then other's set
-    view by the userId and privacy is "public"
-    return new list
-     */
 }

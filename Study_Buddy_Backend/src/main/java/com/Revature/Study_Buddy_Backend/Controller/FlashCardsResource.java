@@ -17,14 +17,14 @@ public class FlashCardsResource {
     private FlashCardsService flashCardsService;
 
     @GetMapping
-    public ResponseEntity<List<FlashCards>>getAllFlashCards() {
+    public ResponseEntity<List<FlashCards>> getAllFlashCards() {
         return new ResponseEntity<>(flashCardsService.getAllFlashCards(),HttpStatus.OK);
     }
 
     /*
     try catch null return/ no content
      */
-    @GetMapping("{fCardId}")
+    @GetMapping("/{fCardId}")
     public ResponseEntity<FlashCards> getFlashCardsById(@PathVariable("fCardId") Long id) {
         try{
             return new ResponseEntity<>(flashCardsService.getByfCardId(id), HttpStatus.OK);
@@ -52,7 +52,7 @@ public class FlashCardsResource {
     /*
     try catch null return/ no content
      */
-    @DeleteMapping("{fCardId}")
+    @DeleteMapping("/{fCardId}")
     public ResponseEntity<?> deleteByFCardId (@PathVariable ("fCardId")Long fCardId){
             try{
                 flashCardsService.getByfCardId(fCardId);
