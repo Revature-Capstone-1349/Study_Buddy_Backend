@@ -9,15 +9,15 @@ import org.springframework.stereotype.Service;
 //dto
 import java.util.List;
 
-@Service
+//@Service
 public interface FlashCardsService{
     List<FlashCards> getAllFlashCards();
 
-    public FlashCards getFlashCardsbyid (Long id);
+    public FlashCards getByfCardId (Long id);
 
     FlashCards addFlashCards (FlashCards flashCards);
 
     FlashCards updateFlashCards (FlashCards flashCards);
 
-    void deleteFlashCards (Long fCardId);
+    void deleteByfCardId (Long fCardId);
 }
