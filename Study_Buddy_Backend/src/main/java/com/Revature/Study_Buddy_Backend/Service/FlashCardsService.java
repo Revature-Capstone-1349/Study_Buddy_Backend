@@ -13,37 +13,34 @@ public class FlashCardsService {
     @Autowired
     private FlashCardsRepo flashCardsRepo;
 
-    /*1. try catch if exist*/
+    /*1. get all flashcards list*/
     public List<FlashCards> getAllFlashCardsList() {
         return flashCardsRepo.findAll();
     }
 
     /*2.
-    try catch if null or size is 0
-    implement findBysetId
-
-    call getAllFlashCardsList return list base off setId
+    get by set id
      */
     public List<FlashCards> getBysetId(Long setId) {
         return flashCardsRepo.findBySetId(setId);
     }
 
-    /*3. try catch if exist*/
+    /*3. get flashcards by id*/
     public FlashCards getByfCardId(Long fCardId) {
         return flashCardsRepo.findById(fCardId).get();
     }
 
-    /*4. adding flashcards*/
+    /*4. add flashcards*/
     public FlashCards addFlashCards(FlashCards flashCards) {
         return flashCardsRepo.save(flashCards);
     }
 
-    /*5. try catch find flash card if not exist return null*/
+    /*5. update flashcards*/
     public FlashCards updateFlashCards(FlashCards flashCards) {
         return flashCardsRepo.save(flashCards);
     }
 
-    /*6. try catch find flash card if not exist return null*/
+    /*6. delete flashcards*/
     public void deleteByfCardId(Long fCardId) {
         flashCardsRepo.deleteById(fCardId);
     }
