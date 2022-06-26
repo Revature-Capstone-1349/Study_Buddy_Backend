@@ -33,14 +33,15 @@ public class SetsResource {
 
     @GetMapping("/{setId}")
     public ResponseEntity<Sets> getSetById(@PathVariable("setId") Long setId){
-        Sets findSets = setsService.getBySetId(setId);
-        if(findSets != null){
-            return new ResponseEntity<>(findSets, HttpStatus.OK);
-        }
+        try{
+            Sets findSets = setsService.getBySetId(setId);
+            if(findSets != null){
+                return new ResponseEntity<>(findSets, HttpStatus.OK);
+            }
+        } catch(Exception ignore){}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    //find if user exist then update, if not return null
     @PutMapping
     public ResponseEntity<Sets> updateListSets(@RequestBody Sets sets) {
         try {
@@ -52,19 +53,18 @@ public class SetsResource {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    //find if the user exist, then delete them, if not return null
     @DeleteMapping("/{setId}")
     public ResponseEntity<?> deleteListSets(@PathVariable("setId") Long setId) {
         try{
-            setsService.getBySetId(setId);
-            setsService.deleteSetsById(setId);
-            return new ResponseEntity<>(HttpStatus.OK);
-        }catch (Exception e){
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            Sets sets = setsService.getBySetId(setId);
+            if(sets != null){
+                setsService.deleteSetsById(setId);
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+        }catch (Exception ignore){}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    //need to find a list of sets that shows all that belong to a user and all public seT NO_CONTENT
     @GetMapping("/publicSet/{userId}")
     public ResponseEntity<List<Sets>> getPublicSets(@PathVariable("userId") Long id){
         List<Sets> viewableSets = new ArrayList<>();

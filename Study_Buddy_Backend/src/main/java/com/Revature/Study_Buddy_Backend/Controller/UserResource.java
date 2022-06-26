@@ -28,7 +28,7 @@ public class UserResource {
             if(user != null) {
                return new ResponseEntity<>(user, HttpStatus.OK);
             }
-        }catch(Exception e){}
+        }catch(Exception ignore){}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
@@ -60,7 +60,7 @@ public class UserResource {
         try {
             userService.deleteByUserId(userId);
             return new ResponseEntity<>(HttpStatus.OK);
-        } catch (Exception err) {
+        } catch (Exception error) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
     }
@@ -69,7 +69,7 @@ public class UserResource {
     public ResponseEntity<User> findUserByEmailAndPasswd(@RequestBody User user) {
         try {
             return new ResponseEntity<>(userService.findUserByEmailAndPasswd(user), HttpStatus.OK);
-        } catch (Exception err) {
+        } catch (Exception error) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
     }

@@ -8,8 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepo extends JpaRepository<User,Long> {
-
     User findUserByEmailAndPasswd(String email, String password);
     User findByuserId(Long userId);
-
 }

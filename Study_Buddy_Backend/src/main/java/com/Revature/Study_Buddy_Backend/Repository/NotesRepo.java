@@ -8,8 +8,6 @@ import java.util.List;
 
 @Repository
 public interface NotesRepo extends JpaRepository <Notes, Long> {
-
     List<Notes> findByUserId(Long setId);
-
     Notes findBynotesId(Long notesId);
 }

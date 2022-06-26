@@ -29,41 +29,47 @@ public class NotesResource {
     @GetMapping("/{id}")
     public ResponseEntity<Notes> getNotesById(@PathVariable("id")Long id){
         try{
-            return new ResponseEntity<>(notesService.getNotesById(id), HttpStatus.OK);
-        }catch(Exception e){
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            Notes notes = notesService.getNotesById(id);
+            if(notes != null) {
+                return new ResponseEntity<>(notes, HttpStatus.OK);
+            }
+        }catch(Exception ignored){}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PostMapping
     public ResponseEntity<Notes> addNotes(@RequestBody Notes notes) {
-        User user = userService.getUserById(notes.getUserId());
-        Sets sets = setsService.getBySetId(notes.getSetId());
-        if (user != null && (sets == null || sets.getUserId().equals(notes.getUserId()))) {
-            return new ResponseEntity<>(notesService.addNotes(notes), HttpStatus.OK);
-        }
+        try{
+            User user = userService.getUserById(notes.getUserId());
+            Sets sets = setsService.getBySetId(notes.getSetId());
+            if (user != null && (sets == null || sets.getUserId().equals(notes.getUserId()))) {
+                return new ResponseEntity<>(notesService.addNotes(notes), HttpStatus.OK);
+            }
+        }catch(Exception ignore){}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PutMapping
     public ResponseEntity<Notes> updatesNotes(@RequestBody Notes notes){
         try{
-            notesService.getNotesById(notes.getNotesId());
-            return new ResponseEntity<>(notesService.updateNotes(notes), HttpStatus.OK);
-        }catch(Exception e){
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            Notes findNotes = notesService.getNotesById(notes.getNotesId());
+            if(findNotes != null){
+                return new ResponseEntity<>(notesService.updateNotes(notes), HttpStatus.OK);
+            }
+        }catch(Exception ignore){}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteNotes(@PathVariable("id")Long notesId){
         try {
-            notesService.getNotesById(notesId);
-            notesService.deleteNotes(notesId);
-            return new ResponseEntity<>(HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            Notes notes = notesService.getNotesById(notesId);
+            if(notes != null) {
+                notesService.deleteNotes(notesId);
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+        } catch (Exception ignore) {}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @GetMapping("/byUser/{userId}")
