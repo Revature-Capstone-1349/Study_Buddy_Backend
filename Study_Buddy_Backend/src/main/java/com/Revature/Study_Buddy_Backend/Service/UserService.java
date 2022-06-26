@@ -20,28 +20,19 @@ public class UserService {
         return userRepo.findAll();
     }
 
-
-
-
     public User getUserById(Long userId) {
-
         return userRepo.findByuserId(userId).orElseThrow(() -> new UserNotFoundException("User Id" + userId + "not found"));
     }
-
-
 
     public User addUser(User user) {
         return userRepo.save(user);
     }
 
-
     public User updateUser(User user) {
         return userRepo.save(user);
     }
 
-    //try catch for null
     public ResponseEntity<?> deleteUser(Long userId) {
-        //try to call getUserById, then check if the call null if not then delete
         User userexist1 = getUserById(userId);
         try {
             userRepo.delete(userexist1);
@@ -52,16 +43,9 @@ public class UserService {
 
     }
 
-    //finding user by email and password
     public User findUserByEmailAndPasswd(User user) {
         User user1 = userRepo.findUserByEmailAndPasswd(user.getEmail(), user.getPasswd())
                 .orElseThrow(() -> new UserNotFoundException("login failed"));
         return user1;
     }
-
-//public void deleteUserByuserId( Long userId){
-//        userRepo.deleteUserBYuserId(userId);
-//}
-
-
 }

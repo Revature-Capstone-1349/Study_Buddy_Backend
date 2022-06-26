@@ -28,11 +28,12 @@ public class NotesResource {
      */
     @GetMapping("/{id}")
     public ResponseEntity<Notes> getNotesById(@PathVariable("id")Long id){
-        Notes notes = notesService.getNotesById(id);
-        if(notes != null){
+        try{
+            Notes notes = notesService.getNotesById(id);
             return new ResponseEntity<>(notes, HttpStatus.OK);
+        }catch(Exception e){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PostMapping
