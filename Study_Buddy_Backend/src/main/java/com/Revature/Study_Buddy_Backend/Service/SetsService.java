@@ -27,8 +27,12 @@ public class SetsService {
     }
 
     //try catch, check if user exist, if not return null
-    public void deleteSets(Long deleteSets){
-        setsRepo.deleteBysetId(deleteSets);
+    public void deleteSetsById(Long deleteSets){
+        setsRepo.deleteById(deleteSets);
+    }
+
+    public Sets getSetById(Long id){
+        return setsRepo.findById(id).get();
     }
 
     //method for finding new list
