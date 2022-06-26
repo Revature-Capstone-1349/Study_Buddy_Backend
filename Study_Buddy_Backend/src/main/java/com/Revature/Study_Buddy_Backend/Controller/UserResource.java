@@ -23,10 +23,12 @@ public class UserResource {
 
     @GetMapping("/{userid}")
     public ResponseEntity<User> getUserById(@PathVariable("userid") Long userId) {
-        User user = userService.getUserById(userId);
-        if(user != null) {
-           return new ResponseEntity<>(user, HttpStatus.OK);
-        }
+        try{
+            User user = userService.getUserById(userId);
+            if(user != null) {
+               return new ResponseEntity<>(user, HttpStatus.OK);
+            }
+        }catch(Exception e){}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
@@ -45,12 +47,12 @@ public class UserResource {
     @PutMapping("/update")
     public ResponseEntity<User> updateUser(@RequestBody User user) {
         try {
-            userService.getUserById(user.getUserId());
-            return new ResponseEntity<>(userService.updateUser(user), HttpStatus.OK);
-
-        } catch (Exception err) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            User findUser = userService.getUserById(user.getUserId());
+            if(findUser != null){
+                return new ResponseEntity<>(userService.updateUser(user), HttpStatus.OK);
+            }
+        } catch (Exception ignore) {}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @DeleteMapping("/delete/{userid}")

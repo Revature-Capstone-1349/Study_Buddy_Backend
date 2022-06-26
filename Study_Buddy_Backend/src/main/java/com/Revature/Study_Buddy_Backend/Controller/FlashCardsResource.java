@@ -15,56 +15,53 @@ import java.util.List;
 public class FlashCardsResource {
     private FlashCardsService flashCardsService;
 
-    //  Get FlashCardsList
     @GetMapping
     public ResponseEntity<List<FlashCards>> FlashCardsList() {
         return new ResponseEntity<>(flashCardsService.getAllFlashCardsList(), HttpStatus.OK);
     }
 
-    //getting flash card by card id
     @GetMapping("/getSet/{fCardId}")
     public ResponseEntity<List<FlashCards>> getAllFlashCardsBySetId(@PathVariable("fCardId") Long id) {
         return new ResponseEntity<>(flashCardsService.getBysetId(id), HttpStatus.OK);
     }
 
-    //try catch null return/ no content
     @GetMapping("/{fCardId}")
     public ResponseEntity<FlashCards> getFlashCardsById(@PathVariable("fCardId") Long fCardId) {
-        FlashCards flashCards = flashCardsService.getByfCardId(fCardId);
-        if(flashCards != null){
-            return new ResponseEntity<>(flashCards, HttpStatus.OK);
-        }
+        try {
+            FlashCards flashCards = flashCardsService.getByfCardId(fCardId);
+            if(flashCards != null){
+                return new ResponseEntity<>(flashCards, HttpStatus.OK);
+            }
+        }catch (Exception ignore){}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-
     }
 
-    //Get FlashCardsList
     @PostMapping
     public ResponseEntity<FlashCards> addFlashCards(@RequestBody FlashCards flashCards) {
         return new ResponseEntity<>(flashCardsService.addFlashCards(flashCards), HttpStatus.OK);
     }
 
-    //try catch null return/ no content
     @PutMapping
     public ResponseEntity<FlashCards> updateFlashCards(@RequestBody FlashCards flashCards) {
         try {
-            flashCardsService.getByfCardId(flashCards.getFCardId());
-            return new ResponseEntity<>(flashCardsService.updateFlashCards(flashCards), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            FlashCards findCards = flashCardsService.getByfCardId(flashCards.getFCardId());
+            if(findCards != null){
+                return new ResponseEntity<>(flashCardsService.updateFlashCards(flashCards), HttpStatus.OK);
+            }
+        } catch (Exception ignore) {}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    //try catch null return/ no content
     @DeleteMapping("/{fCardId}")
     public ResponseEntity<?> deleteByFCardId(@PathVariable("fCardId") Long fCardId) {
         try {
-            flashCardsService.getByfCardId(fCardId);
-            flashCardsService.deleteByfCardId(fCardId);
-            return new ResponseEntity<>(HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            FlashCards flashCards = flashCardsService.getByfCardId(fCardId);
+            if(flashCards != null){
+                flashCardsService.deleteByfCardId(fCardId);
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+        } catch (Exception ignore) {}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 }

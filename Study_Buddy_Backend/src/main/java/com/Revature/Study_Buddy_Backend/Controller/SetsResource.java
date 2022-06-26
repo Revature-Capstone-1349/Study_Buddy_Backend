@@ -44,11 +44,12 @@ public class SetsResource {
     @PutMapping
     public ResponseEntity<Sets> updateListSets(@RequestBody Sets sets) {
         try {
-            setsService.getBySetId(sets.getSetId());
-            return new ResponseEntity<>(setsService.updateSets(sets), HttpStatus.OK);
-        }catch (Exception e){
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
+            Sets findSets = setsService.getBySetId(sets.getSetId());
+            if(findSets != null) {
+                return new ResponseEntity<>(setsService.updateSets(sets), HttpStatus.OK);
+            }
+        }catch (Exception ignore){}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     //find if the user exist, then delete them, if not return null
