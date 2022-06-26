@@ -36,17 +36,13 @@ public class NotesResource {
     }
 
     @PostMapping
-    public ResponseEntity<Notes> addNotes(@RequestBody Notes notes){
-        try{
-            Sets sets = setsService.getBySetId(notes.getSetId());
-            User user = userService.getUserById(notes.getUserId());
-            if(sets.getUserId().equals(notes.getUserId()) && user != null){
-                return new ResponseEntity<>(notesService.addNotes(notes),HttpStatus.OK);
-            }
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        } catch (Exception e){
+    public ResponseEntity<Notes> addNotes(@RequestBody Notes notes) {
+        User user = userService.getUserById(notes.getUserId());
+        Sets sets = setsService.getBySetId(notes.getSetId());
+        if (user != null && (sets == null || sets.getUserId().equals(notes.getUserId()))) {
             return new ResponseEntity<>(notesService.addNotes(notes), HttpStatus.OK);
         }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PutMapping
