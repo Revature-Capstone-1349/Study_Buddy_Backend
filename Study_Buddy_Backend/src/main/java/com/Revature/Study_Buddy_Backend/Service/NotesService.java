@@ -5,7 +5,10 @@ import com.Revature.Study_Buddy_Backend.Repository.NotesRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
 
 @Service
 public class NotesService {
@@ -22,8 +25,10 @@ public class NotesService {
     fix with repository method findBynotesId
      */
     public Notes getNotesById(Long id){
-        return notesRepo.findById(id).get();
+        Optional<Notes> optionalNotes = notesRepo.findById(id);
+        return optionalNotes.orElse(null);
     }
+
 
     public Notes addNotes(Notes notes) {
         return notesRepo.save(notes);
@@ -31,11 +36,20 @@ public class NotesService {
 
     //try catch find note, if not return null
     public Notes updateNotes(Notes notes) {
-        return notesRepo.save(notes);
+        Notes findNote = getNotesById(notes.getNotesId());
+        if(findNote != null) {
+            return notesRepo.save(notes);
+        }
+        return null;
     }
+
     //try catch find note, if not return null
-    public void deleteNotes(Long notesId){
-        notesRepo.deleteBynotesId(notesId);
+    public void deleteNotes(Long notes){
+        notesRepo.deleteById(notes);
+    }
+
+    public List<Notes> getNotesBySetIds(Long setId){
+        return notesRepo.findBySetId(setId);
     }
 
     /*

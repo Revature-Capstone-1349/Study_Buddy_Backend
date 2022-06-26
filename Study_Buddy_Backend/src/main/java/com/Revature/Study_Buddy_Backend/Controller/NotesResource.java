@@ -2,6 +2,7 @@ package com.Revature.Study_Buddy_Backend.Controller;
 
 import com.Revature.Study_Buddy_Backend.Model.Notes;
 import com.Revature.Study_Buddy_Backend.Service.NotesService;
+import com.Revature.Study_Buddy_Backend.Service.SetsService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.util.List;
 public class NotesResource {
 
     private NotesService notesService;
+    private SetsService setsService;
 
     @GetMapping
     public ResponseEntity<List<Notes>> getAllNotes() {
@@ -26,7 +28,11 @@ public class NotesResource {
      */
     @GetMapping("/{id}")
     public ResponseEntity<Notes> getNotesById(@PathVariable("id")Long id){
-        return new ResponseEntity<>(notesService.getNotesById(id),HttpStatus.OK);
+        Notes notes = notesService.getNotesById(id);
+        if(notes != null){
+            return new ResponseEntity<>(notes, HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PostMapping
@@ -39,7 +45,11 @@ public class NotesResource {
      */
     @PutMapping
     public ResponseEntity<Notes> updatesNotes(@RequestBody Notes notes){
-        return new ResponseEntity<>(notesService.updateNotes(notes),HttpStatus.OK);
+        Notes findNotes = notesService.getNotesById(notes.getNotesId());
+        if(findNotes != null){
+            return new ResponseEntity<>(notesService.updateNotes(notes), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 
@@ -48,14 +58,18 @@ public class NotesResource {
      */
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteNotes(@PathVariable("id")Long notesId){
-        notesService.deleteNotes(notesId);
-        return new ResponseEntity<>(HttpStatus.OK);
+        try {
+            notesService.deleteNotes(notesId);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        //notesService.deleteNotes(notesId);
+        //return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-
-    /*
-    GetMapping
-    get note by set id
-    try catch null return/ no content
-     */
+    @GetMapping("/bySet/{id}")
+    public ResponseEntity<List<Notes>> getNotesBySetId(@PathVariable("id") Long setId) {
+        return new ResponseEntity<>(notesService.getNotesBySetIds(setId), HttpStatus.OK);
+    }
 }
