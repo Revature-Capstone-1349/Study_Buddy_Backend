@@ -11,7 +11,4 @@ public interface NotesRepo extends JpaRepository <Notes, Long> {
 
     List<Notes> findBySetId(Long setId);
 
-    Notes findBynotesId(Long notesId);
-
-    void deleteBynotesId(Long notesId);
 }
