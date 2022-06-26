@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -38,7 +39,7 @@ public class UserResource {
     public ResponseEntity<User> addUser(@RequestBody User user) {
         List<User> userList = userService.getAllUser();
         for(User findUser : userList){
-            if(findUser.getEmail() == user.getEmail()){
+            if(findUser.getEmail().equals(user.getEmail())){
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
         }
