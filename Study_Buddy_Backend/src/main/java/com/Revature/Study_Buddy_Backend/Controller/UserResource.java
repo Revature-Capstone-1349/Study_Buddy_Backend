@@ -36,14 +36,15 @@ public class UserResource {
    }
 
     @PostMapping("/add")
-    public ResponseEntity<User> addUser(@RequestBody User user) {
+    public ResponseEntity<Boolean> addUser(@RequestBody User user) {
         List<User> userList = userService.getAllUser();
         for(User findUser : userList){
             if(findUser.getEmail().equals(user.getEmail())){
-                return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+                return new ResponseEntity<>(false, HttpStatus.NO_CONTENT);
             }
         }
-        return new ResponseEntity<>(userService.addUser(user), HttpStatus.CREATED);
+        userService.addUser(user);
+        return new ResponseEntity<>(true, HttpStatus.CREATED);
     }
 
     @PutMapping("/update")
