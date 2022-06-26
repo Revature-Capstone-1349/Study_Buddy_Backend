@@ -31,11 +31,11 @@ public class SetsResource {
         return new ResponseEntity<>(setsService.addSets(newSets), HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<?> getSetById(@PathVariable("id") Long id){
-        Sets setExist = setsService.getSetById(id);
-        if (setExist != null){
-            return new ResponseEntity<>(setExist, HttpStatus.OK);
+    @GetMapping("/{setId}")
+    public ResponseEntity<Sets> getSetById(@PathVariable("setId") Long setId){
+        Sets findSets = setsService.getBySetId(setId);
+        if(findSets != null){
+            return new ResponseEntity<>(findSets, HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
@@ -44,7 +44,7 @@ public class SetsResource {
     @PutMapping
     public ResponseEntity<Sets> updateListSets(@RequestBody Sets sets) {
         try {
-            setsService.getSetById(sets.getSetId());
+            setsService.getBySetId(sets.getSetId());
             return new ResponseEntity<>(setsService.updateSets(sets), HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -52,10 +52,11 @@ public class SetsResource {
     }
 
     //find if the user exist, then delete them, if not return null
-    @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteListSets(@PathVariable("id") Long id) {
+    @DeleteMapping("/{setId}")
+    public ResponseEntity<?> deleteListSets(@PathVariable("setId") Long setId) {
         try{
-            setsService.deleteSetsById(id);
+            setsService.getBySetId(setId);
+            setsService.deleteSetsById(setId);
             return new ResponseEntity<>(HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -68,7 +69,7 @@ public class SetsResource {
         List<Sets> viewableSets = new ArrayList<>();
         List<Sets> allSets = setsService.getAllSets();
         for(Sets sets: allSets){
-            if(sets.getUserId() == id || sets.getPrivacy().equalsIgnoreCase("public")){
+            if(sets.getUserId().equals(id) || sets.getPrivacy().equalsIgnoreCase("public")){
                 viewableSets.add(sets);
             }
         }

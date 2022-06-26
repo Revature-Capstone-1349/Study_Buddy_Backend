@@ -20,9 +20,8 @@ public class NotesService {
         return notesRepo.findAll();
     }
 
-    public Notes getNotesById(Long id){
-        Optional<Notes> optionalNotes = notesRepo.findById(id);
-        return optionalNotes.orElse(null);
+    public Notes getNotesById(Long notesId){
+        return notesRepo.findBynotesId(notesId);
     }
 
     public Notes addNotes(Notes notes) {
@@ -37,12 +36,7 @@ public class NotesService {
         notesRepo.deleteById(notes);
     }
 
-    public List<Notes> getNotesBySetIds(Long setId){
-        return notesRepo.findBySetId(setId);
+    public List<Notes> getNotesByUserIds(Long userId){
+        return notesRepo.findByUserId(userId);
     }
-
-    /*
-    return a list of notes by set id
-    with repository findBySetId
-     */
 }

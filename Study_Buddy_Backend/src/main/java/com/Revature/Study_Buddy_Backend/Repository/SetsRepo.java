@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface SetsRepo extends JpaRepository <Sets, Long>{
 
+    Sets findBysetId(Long id);
 }

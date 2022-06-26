@@ -3,7 +3,6 @@ package com.Revature.Study_Buddy_Backend.Controller;
 import com.Revature.Study_Buddy_Backend.Model.FlashCards;
 import com.Revature.Study_Buddy_Backend.Service.FlashCardsService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
@@ -14,7 +13,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/flashcards")
 public class FlashCardsResource {
-    @Autowired
     private FlashCardsService flashCardsService;
 
     //  Get FlashCardsList
@@ -31,12 +29,13 @@ public class FlashCardsResource {
 
     //try catch null return/ no content
     @GetMapping("/{fCardId}")
-    public ResponseEntity<FlashCards> getFlashCardsById(@PathVariable("fCardId") Long id) {
-        try {
-            return new ResponseEntity<>(flashCardsService.getByfCardId(id), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    public ResponseEntity<FlashCards> getFlashCardsById(@PathVariable("fCardId") Long fCardId) {
+        FlashCards flashCards = flashCardsService.getByfCardId(fCardId);
+        if(flashCards != null){
+            return new ResponseEntity<>(flashCards, HttpStatus.OK);
         }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
     }
 
     //Get FlashCardsList
@@ -49,7 +48,7 @@ public class FlashCardsResource {
     @PutMapping
     public ResponseEntity<FlashCards> updateFlashCards(@RequestBody FlashCards flashCards) {
         try {
-            FlashCards findCard = flashCardsService.getByfCardId(flashCards.getFCardId());
+            flashCardsService.getByfCardId(flashCards.getFCardId());
             return new ResponseEntity<>(flashCardsService.updateFlashCards(flashCards), HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);

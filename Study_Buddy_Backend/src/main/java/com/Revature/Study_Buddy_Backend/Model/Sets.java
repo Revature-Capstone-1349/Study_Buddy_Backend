@@ -17,7 +17,4 @@ public class Sets {
     private String privacy;
     private Long userId;
     private String setName;
-
-
-
 }

@@ -2,11 +2,11 @@ package com.Revature.Study_Buddy_Backend.Service;
 
 import com.Revature.Study_Buddy_Backend.Model.FlashCards;
 import com.Revature.Study_Buddy_Backend.Repository.FlashCardsRepo;
-import com.Revature.Study_Buddy_Backend.Repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class FlashCardsService {
@@ -22,7 +22,7 @@ public class FlashCardsService {
     }
 
     public FlashCards getByfCardId(Long fCardId) {
-        return flashCardsRepo.findById(fCardId).get();
+        return flashCardsRepo.findByfCardId(fCardId);
     }
 
     public FlashCards addFlashCards(FlashCards flashCards) {

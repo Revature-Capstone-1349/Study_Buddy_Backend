@@ -1,6 +1,5 @@
 package com.Revature.Study_Buddy_Backend.Service;
 
-import com.Revature.Study_Buddy_Backend.Exceptions.UserNotFoundException;
 import com.Revature.Study_Buddy_Backend.Model.User;
 import com.Revature.Study_Buddy_Backend.Repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,31 +20,22 @@ public class UserService {
     }
 
     public User getUserById(Long userId) {
-        return userRepo.findByuserId(userId).orElseThrow(() -> new UserNotFoundException("User Id" + userId + "not found"));
+        return userRepo.findByuserId(userId);
     }
 
-    public User addUser(User user) {
-        return userRepo.save(user);
+    public void addUser(User user) {
+        userRepo.save(user);
     }
 
     public User updateUser(User user) {
         return userRepo.save(user);
     }
 
-    public ResponseEntity<?> deleteUser(Long userId) {
-        User userexist1 = getUserById(userId);
-        try {
-            userRepo.delete(userexist1);
-            return new ResponseEntity<>(HttpStatus.OK);
-        } catch (Error error) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
-
+    public void deleteByUserId(Long userId) {
+        userRepo.delete(getUserById(userId));
     }
 
     public User findUserByEmailAndPasswd(User user) {
-        User user1 = userRepo.findUserByEmailAndPasswd(user.getEmail(), user.getPasswd())
-                .orElseThrow(() -> new UserNotFoundException("login failed"));
-        return user1;
+        return userRepo.findUserByEmailAndPasswd(user.getEmail(), user.getPasswd());
     }
 }

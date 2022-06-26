@@ -19,5 +19,5 @@ public class Notes {
     private String cat;
     private String content;
     private Long setId;
-
+    private Long userId;
 }

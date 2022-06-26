@@ -29,7 +29,7 @@ public class SetsService {
         setsRepo.deleteById(deleteSets);
     }
 
-    public Sets getSetById(Long id){
-        return setsRepo.findById(id).get();
+    public Sets getBySetId(Long id){
+        return setsRepo.findBysetId(id);
     }
 }
