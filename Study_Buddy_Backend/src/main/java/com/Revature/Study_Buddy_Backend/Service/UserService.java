@@ -21,10 +21,14 @@ public class UserService {
     }
 
 
+
+
     public User getUserById(Long userId) {
 
         return userRepo.findByuserId(userId).orElseThrow(() -> new UserNotFoundException("User Id" + userId + "not found"));
     }
+
+
 
     public User addUser(User user) {
         return userRepo.save(user);

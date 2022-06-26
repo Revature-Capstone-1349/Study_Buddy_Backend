@@ -24,14 +24,20 @@ public class UserResource {
 
     }
 
-    @GetMapping("/{userid}")
+   @GetMapping("/{userid}")
     public ResponseEntity<User> getUserById(@PathVariable("userid") Long userId) {
-        User user = userService.getUserById(userId);
-        if (user != null) {
-            return new ResponseEntity<>(user, HttpStatus.OK);
-        }
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-    }
+
+       try {
+
+
+           return new ResponseEntity<>(userService.getUserById(userId), HttpStatus.OK);
+
+       } catch (Exception e) {
+           return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+       }
+
+   }
+
 
     @PostMapping("/add")
     public ResponseEntity<User> addUser(@RequestBody User user) {
