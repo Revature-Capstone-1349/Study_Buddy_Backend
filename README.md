@@ -27,19 +27,21 @@
  http://localhost:4200/flash-cards
  ### *Notes*
  http://localhost:4200/notes
-### **Technoligies**
+### *Technoligies*
  
-### **Authors**
+### *Authors*
  
-### **Environment**
+### *Environment*
 
-### **Roles & Responsibilities**
+### *Roles & Responsibilities*
 
-### **Challenges**
+### *Challenges*
 
-### **Screenshots**
+### *Screenshots*
+Tables in MySQL Database
+<img width="591" alt="Screen Shot 2022-06-27 at 3 05 02 PM" src="https://user-images.githubusercontent.com/74020237/176016961-b22adda0-6693-4625-927c-bb9ca23be39a.png">
 
-### **License**
+### *License*
      
      
  
