@@ -69,11 +69,13 @@ public class SetsResource {
     public ResponseEntity<List<Sets>> getPublicSets(@PathVariable("userId") Long id){
         List<Sets> viewableSets = new ArrayList<>();
         List<Sets> allSets = setsService.getAllSets();
-        for(Sets sets: allSets){
-            if(sets.getUserId().equals(id) || sets.getPrivacy().equalsIgnoreCase("public")){
-                viewableSets.add(sets);
+        try{
+            for(Sets sets: allSets){
+                if(sets.getUserId().equals(id) || sets.getPrivacy().equalsIgnoreCase("public")){
+                    viewableSets.add(sets);
+                }
             }
-        }
+        }catch (Exception ignore){}
         return new ResponseEntity<>(viewableSets, HttpStatus.OK);
     }
 }
