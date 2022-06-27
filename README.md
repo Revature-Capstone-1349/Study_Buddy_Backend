@@ -145,6 +145,7 @@ The local host for register was 4200.
  
 ## *Timer*
 
+
 ## *Sets*
  
 ## *Flashcards*
@@ -153,12 +154,9 @@ The local host for Flash Cards was 4200.
 ## *Notes*
 The local host for notes was 4200.
 
-## *Environment*
-
-
 ## *IDE Used*
-Microsoft Visual Code
-IntelliJ IDEA by JetBrains
+ - Microsoft Visual Code
+ - IntelliJ IDEA by JetBrains
 
 ## *Material Used*
 Our material for the website came from material.angular.io.
