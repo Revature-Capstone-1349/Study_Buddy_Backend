@@ -29,18 +29,18 @@ ___
 ## *The Annotations used for Java in IntelliJ*
 ### **@Autowired**
     Spring provides annotation-based auto-wiring by providing @Autowired annotation. It is used to autowire spring beans on setter methods, instance variables, and constructor. When we use @Autowired annotation, the spring container auto-wires the bean by matching data-type.
-### **@AllArgsConstructor**
+### *@AllArgsConstructor*
     Generates an all-args constructor. An all-args constructor requires one argument for every field in the class.
-### **@RestController**
+### *@RestController*
      It can be considered as a combination of @Controllerand @ResponseBody annotations. The @RestController annotation is itself annotated with the @ResponseBody annotation. It eliminates the need for annotating each method with @ResponseBody.
-### **@Data**
+### *@Data*
      It is a convenient shortcut annotation that bundles the features of @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor together.
-### **@NoArgsConstructor** 
+### *@NoArgsConstructor*
      The @NoArgsConstructor annotation is used to generate the no-argument constructor for a class. In this case, the class consists of final fields. Using this annotation makes the compiler throw a compile-time error. To overcome this, the annotation takes a parameter called force which, when set to be true, initializes the final fields 0 or false or null.
-### **@Entity**      
+### *@Entity*      
       @Entity annotation defines that a class can be mapped to a table. And that is it, it is just a marker, like for example Serializable interface.
 
-### **@RequestBody**
+### *@RequestBody*
 This annotation is applicable to handle methods of Spring controllers.This annotation indicates that Spring should deserialize a request body into an object.This object is passed as a handler method parameter.
 
 @RequestMapping("/api/users")
@@ -48,7 +48,7 @@ This annotation is applicable to handle methods of Spring controllers.This annot
 @RequestMapping("/api/Notes")
 @RequestMapping("/api/Sets")
 
-### **@GetMapping**
+### *@GetMapping*
 The @GetMapping annotation is a specialized version of the @RequestMapping annotation that acts as 
 a shortcut for @RequestMapping(method=RequestMethod.GET).The @GetMapping annotated methods in the
 @Controller annotated classes handle the HTTP GET requests matched with the given URI expression.
@@ -68,7 +68,7 @@ a shortcut for @RequestMapping(method=RequestMethod.GET).The @GetMapping annotat
     }
 ```    
     
-### **@PostMapping**
+### *@PostMapping*
 The @PostMapping is a Specialized version of the @RequestMapping annotation that acts as a shortcut
 for @RequestMapping(method=RequestMethod.POST). The @PostMapping annotated method in the @Controller annotated
 classes handle the HTTP POST requests matched with the given URI expression.
@@ -85,7 +85,7 @@ classes handle the HTTP POST requests matched with the given URI expression.
             }
 ```
   
-### **@PutMapping**
+### *@PutMapping*
 The @PutMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.PUT). consumes-Narrow the primary mapping by media types 
 that can be consumed by the mapped handler.
@@ -104,7 +104,7 @@ that can be consumed by the mapped handler.
     }
 ```    
     
-### **@DeleteMapping**
+### *@DeleteMapping*
 The @DeleteMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.DELETE).
 
@@ -123,15 +123,15 @@ for @RequestMapping(method=RequestMethod.DELETE).
     }
 ```    
 
-### **@Bean**
+### *@Bean*
 It is a method-level annotation. It is an alternative of XML bean tag. It tells the method to produce a bean to be managed by Spring Container. 
 
-### **@Repository**
+### *@Repository*
 
 DAO or Repository classes usually represent the database access layer in an application,
 and should be annotated with @Repository.
 
-### **@Service**
+### *@Service*
 
 The business logic of an application usually resides within the service layer,
 so use the @Service annotation to indicate that a class belongs to that layer.
@@ -145,6 +145,7 @@ The local host for register was 4200.
  
 ## *Timer*
 
+
 ## *Sets*
  
 ## *Flashcards*
@@ -153,85 +154,85 @@ The local host for Flash Cards was 4200.
 ## *Notes*
 The local host for notes was 4200.
 
-## *Environment*
-
-
 ## *IDE Used*
-Microsoft Visual Code
-IntelliJ IDEA by JetBrains
+ - Microsoft Visual Code
+ - IntelliJ IDEA by JetBrains
 
 ## *Material Used*
 Our material for the website came from material.angular.io.
 
 ___
  
-### *Authors*
-#### *Author & Scrum Master*
+## *Authors*
+### *Author & Scrum Master*
 
-##### [Jeffrey Saelee](https://github.com/Servation/)
-
-___
-
-#### *Author & Team Leads*
-
-##### [Connor Bullock](https://github.com/cbullock1/)
-
-##### [Thomas Lin](https://github.com/ttlin030735/)
-
-##### [Danny Vais](https://github.com/DannyVais/)
-
-##### [Nicholas Torres](https://github.com/nicktor19/)		
+#### [Jeffrey Saelee](https://github.com/Servation/)
 
 ___
 
-### *Lead for the Presentation Documentation*
+## *Author & Team Leads*
 
-##### [Danny Vais](https://github.com/DannyVais/)
+#### [Connor Bullock](https://github.com/cbullock1/)
+
+#### [Thomas Lin](https://github.com/ttlin030735/)
+
+#### [Danny Vais](https://github.com/DannyVais/)
+
+#### [Nicholas Torres](https://github.com/nicktor19/)		
+
 ___
 
-### *Lead for Read Me* 
+## *Lead for the Presentation Documentation*
 
-##### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
+#### [Danny Vais](https://github.com/DannyVais/)
+___
+
+## *Lead for Read Me* 
+
+#### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
 
 ___
 
-##### [Yeison Bello](https://github.com/yeisonBello/)
+## *Authors & Team Members*
 
-##### [Jordan Casavecchia](https://github.com/HappyHysteria/)
+#### [Yeison Bello](https://github.com/yeisonBello/)
+
+#### [Jordan Casavecchia](https://github.com/HappyHysteria/)
 		
-##### [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
+#### [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
 
-##### [Nacer Djabour](https://github.com/Nacerdj/)
+#### [Nacer Djabour](https://github.com/Nacerdj/)
 		
-##### [Manisha Goyal](https://github.com/GoyalMani/)
+#### [Manisha Goyal](https://github.com/GoyalMani/)
 
-##### [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
+#### [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
 
-##### [Daniel Moura](https://github.com/DMM2WEB/)
+#### [Daniel Moura](https://github.com/DMM2WEB/)
 				
-##### [Shane Smith](https://github.com/WorldKaizen/)
+#### [Shane Smith](https://github.com/WorldKaizen/)
 		
-##### [Danny Vais](https://github.com/DannyVais/)
+#### [Danny Vais](https://github.com/DannyVais/)
 		
-##### [Khine Zaw](http://github.com/kzaw7/)
+#### [Khine Zaw](http://github.com/kzaw7/)
 
-##### [Alejandro zubillaga](https://github.com/)
+#### [Alejandro zubillaga](https://github.com/)
  
 ___
 
 
-<details><summary>Roles & Responsibilities</summary>
+<details><summary><strong>Roles & Responsibilities</strong></summary>
 <p>
 
 </p>
 </details>
 
+---
 
-### *Challenges*
+## *Challenges*
 
 
 ___
-### *Screenshots*
+## *Screenshots*
 ![angular-material](https://user-images.githubusercontent.com/74020237/176029818-e8e4c250-65fd-4f20-a456-08da19d6ec2d.png)
 ![Trello](https://user-images.githubusercontent.com/74020237/176029825-723cbf66-1a8b-487f-a35b-fbe1b8f5520f.png)
 [ERDproj3.pdf](https://github.com/Revature-Capstone-1349/Study_Buddy_Backend/files/8995368/ERDproj3.pdf)
@@ -246,38 +247,38 @@ ___
 Tables in MySQL Database
 <img width="591" alt="Screen Shot 2022-06-27 at 3 05 02 PM" src="https://user-images.githubusercontent.com/74020237/176016961-b22adda0-6693-4625-927c-bb9ca23be39a.png">
 ___
-### *License*
+## *License*
 
-Oracle Java 18: Version 17.0.2 & Version 18
-License Agreement: 
-https://www.oracle.com/downloads/licenses/no-fee-license.html
+### Oracle Java 18: Version 17.0.2 & Version 18
+#### License Agreement: 
+#### https://www.oracle.com/downloads/licenses/no-fee-license.html
 ---
-Visual Studio Code: Version 1.68.1
-License Agreement:
-https://code.visualstudio.com/License/
+### Visual Studio Code: Version 1.68.1
+#### License Agreement:
+#### https://code.visualstudio.com/License/
 ---
-Node.js: Version 16.13.0
-License Agreement: 
-https://raw.githubusercontent.com/nodejs/node/master/LICENSE
+### Node.js: Version 16.13.0
+#### License Agreement: 
+#### https://raw.githubusercontent.com/nodejs/node/master/LICENSE
 ---
-Material Angular: Version 14.0.2
-License Agreement: 
-https://github.com/angular/components/blob/main/LICENSE
+### Material Angular: Version 14.0.2
+#### License Agreement: 
+#### https://github.com/angular/components/blob/main/LICENSE
 ---
-IntelliJ IDEA Community Edition: Version 2022.1.3
-License Agreement:
-https://www.jetbrains.com/help/idea/installation-guide.html#:~:text=Install%20IntelliJ%20IDEA%EF%BB%BF&text=IntelliJ%20IDEA%20is%20a%20cross,source%2C%20licensed%20under%20Apache%202.0
+### IntelliJ IDEA Community Edition: Version 2022.1.3
+#### License Agreement:
+#### https://www.jetbrains.com/help/idea/installationguide.html#:~:text=Install%20IntelliJ%20IDEA%EF%BB%BF&text=IntelliJ%20IDEA%20is%20a%20cross,source%2C%20licensed%20under%20Apache%202.0
 ---
-MySQL: Version
-License Agreement: 
-https://dev.mysql.com/doc/refman/8.0/en/preface.html
+### MySQL: Version 8.0.29
+#### License Agreement: 
+#### https://dev.mysql.com/doc/refman/8.0/en/preface.html
 ---
-Git: Version 2.36.1
-License Agreement: https://github.com/git-for-windows/git/
+### Git: Version 2.36.1
+#### License Agreement: https://github.com/git-for-windows/git/
 ---
-Spring Boot: Version 2.7.1
-License Agreement:
-https://www.vmware.com/help/legal.html
+### Spring Boot: Version 2.7.1
+#### License Agreement:
+#### https://www.vmware.com/help/legal.html
 
 
 
