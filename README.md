@@ -76,6 +76,8 @@ https://material.angular.io
 // Lead for Read Me 
 
   # [Lisa Lenhart](https://github.com/CodeFlareLisa/)
+  
+// Members 
 
   # [Yeison Bello](https://github.com/yeisonBello/)
 
