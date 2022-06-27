@@ -16,7 +16,7 @@ ___
   - Git: Version 2.36.1
   - Spring Boot: Version 2.7.1
 
-### *Dependecies*
+### *Dependencies*
 - Lombok Dev Tool /  Java annotation library, helps to reduce boiler plate code
 - MySQL Driver /  MySQL JDBC and R2DBC driver
 - Spring Data JPA /  Persist data in SQL stores with Java Persistance API Spring Date and Hibernate
@@ -68,11 +68,13 @@ a shortcut for @RequestMapping(method=RequestMethod.GET).The @GetMapping annotat
     }
 ```    
     
-### **@PostMapping
+### **@PostMapping**
 The @PostMapping is a Specialized version of the @RequestMapping annotation that acts as a shortcut
 for @RequestMapping(method=RequestMethod.POST). The @PostMapping annotated method in the @Controller annotated
 classes handle the HTTP POST requests matched with the given URI expression.
 
+#### Sample Code of @PostMapping ####
+```java
 @PostMapping
     public ResponseEntity<Notes> addNotes(@RequestBody Notes notes) {
         try{
@@ -81,15 +83,15 @@ classes handle the HTTP POST requests matched with the given URI expression.
             if (user != null && (sets == null || sets.getUserId().equals(notes.getUserId()))) {
                 return new ResponseEntity<>(notesService.addNotes(notes), HttpStatus.OK);
             }
-
+```
   
-###**@PutMapping
-
+### **@PutMapping**
 The @PutMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.PUT). consumes-Narrow the primary mapping by media types 
 that can be consumed by the mapped handler.
 
-
+#### Sample Code of @PutMapping ####
+```java
 @PutMapping("/update")
     public ResponseEntity<User> updateUser(@RequestBody User user) {
         try {
@@ -100,12 +102,14 @@ that can be consumed by the mapped handler.
         } catch (Exception ignore) {}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+```    
     
-###** @DeleteMapping
-
+### **@DeleteMapping**
 The @DeleteMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.DELETE).
 
+#### Sample Code of @DeleteMapping ####
+```java
 @DeleteMapping("/{fCardId}")
     public ResponseEntity<?> deleteByFCardId(@PathVariable("fCardId") Long fCardId) {
         try {
@@ -117,17 +121,17 @@ for @RequestMapping(method=RequestMethod.DELETE).
         } catch (Exception ignore) {}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+```    
 
-### *@Bean*
-
+### **@Bean**
 It is a method-level annotation. It is an alternative of XML bean tag. It tells the method to produce a bean to be managed by Spring Container. 
 
-### *@Repository*
+### **@Repository**
 
 DAO or Repository classes usually represent the database access layer in an application,
 and should be annotated with @Repository.
 
-### *@Service*
+### **@Service**
 
 The business logic of an application usually resides within the service layer,
 so use the @Service annotation to indicate that a class belongs to that layer.
@@ -136,7 +140,7 @@ ___
 ## *Login*
 The local host for login was 4200.
      
-## *Register* 
+## *Register*
 The local host for register was 4200.
  
 ## *Timer*
@@ -156,7 +160,7 @@ The local host for notes was 4200.
 Microsoft Visual Code
 IntelliJ IDEA by JetBrains
 
-## *Material Used
+## *Material Used*
 Our material for the website came from material.angular.io.
 
  
@@ -165,7 +169,7 @@ Our material for the website came from material.angular.io.
 
 ##### [Jeffrey Saelee](https://github.com/Servation/)
 
-
+___
 
 #### *Author & Team Leads*
 
@@ -177,16 +181,18 @@ Our material for the website came from material.angular.io.
 
 ##### [Nicholas Torres](https://github.com/nicktor19/)		
 
-
+___
 
 ### *Lead for the Presentation Documentation*
 
 ##### [Danny Vais](https://github.com/DannyVais/)
-
+___
 
 ### *Lead for Read Me* 
 
 ##### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
+
+___
 
 ##### [Yeison Bello](https://github.com/yeisonBello/)
 
