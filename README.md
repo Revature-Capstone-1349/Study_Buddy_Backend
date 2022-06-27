@@ -163,6 +163,7 @@ IntelliJ IDEA by JetBrains
 ## *Material Used*
 Our material for the website came from material.angular.io.
 
+___
  
 ### *Authors*
 #### *Author & Scrum Master*
