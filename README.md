@@ -41,8 +41,10 @@
 ### Get
 @GetMapping
 ### *IDE Used
-
-### *API Used
+Microsoft Visual Code
+IntelliJ
+### *Material Used
+https://material.angular.io
 
  
 ### *Authors*
