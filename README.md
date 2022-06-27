@@ -246,6 +246,50 @@ Tables in MySQL Database
 <img width="591" alt="Screen Shot 2022-06-27 at 3 05 02 PM" src="https://user-images.githubusercontent.com/74020237/176016961-b22adda0-6693-4625-927c-bb9ca23be39a.png">
 ___
 ### *License*
+
+Oracle Java 18: Version 17.0.2 & Version 18
+License Agreement: 
+https://www.oracle.com/downloads/licenses/no-fee-license.html
+---
+Visual Studio Code: Version 1.68.1
+License Agreement:
+https://code.visualstudio.com/License/
+---
+Node.js: Version 16.13.0
+License Agreement: 
+https://raw.githubusercontent.com/nodejs/node/master/LICENSE
+---
+Material Angular: Version 14.0.2
+License Agreement: 
+https://github.com/angular/components/blob/main/LICENSE
+---
+IntelliJ IDEA Community Edition: Version 2022.1.3
+License Agreement:
+https://www.jetbrains.com/help/idea/installation-guide.html#:~:text=Install%20IntelliJ%20IDEA%EF%BB%BF&text=IntelliJ%20IDEA%20is%20a%20cross,source%2C%20licensed%20under%20Apache%202.0
+---
+MySQL: Version
+License Agreement: 
+https://dev.mysql.com/doc/refman/8.0/en/preface.html
+---
+Git: Version 2.36.1
+License Agreement: https://github.com/git-for-windows/git/
+---
+Spring Boot: Version 2.7.1
+License Agreement:
+https://www.vmware.com/help/legal.html
+
+
+
+
+
+
+
+
+
+
+
+
+
      
      
  
