@@ -83,7 +83,7 @@ classes handle the HTTP POST requests matched with the given URI expression.
             }
 
   
-  ###**@PutMapping
+###**@PutMapping
 
 The @PutMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.PUT). consumes-Narrow the primary mapping by media types 
@@ -101,9 +101,9 @@ that can be consumed by the mapped handler.
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
     
-   ###** @DeleteMapping
+###** @DeleteMapping
 
- The @DeleteMapping is a composed annotation that acts as a shortcut 
+The @DeleteMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.DELETE).
 
 @DeleteMapping("/{fCardId}")
@@ -118,96 +118,102 @@ for @RequestMapping(method=RequestMethod.DELETE).
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-@Bean
+### *@Bean*
 
 It is a method-level annotation. It is an alternative of XML bean tag. It tells the method to produce a bean to be managed by Spring Container. 
 
-@Repository
+### *@Repository*
 
 DAO or Repository classes usually represent the database access layer in an application,
 and should be annotated with @Repository.
 
-@Service
+### *@Service*
 
 The business logic of an application usually resides within the service layer,
 so use the @Service annotation to indicate that a class belongs to that layer.
-    
+___    
 
- ### *Login*
- http://localhost:4200/login
+## *Login*
+The local host for login was 4200.
      
- ### *Register* 
- http://localhost:4200/register
+## *Register* 
+The local host for register was 4200.
  
- ### *Timer*
-  
- ### *Sets*
- 
- ### *Flashcards*
- http://localhost:4200/flash-cards
- ### *Notes*
- http://localhost:4200/notes
+## *Timer*
 
-### *IDE Used
+## *Sets*
+ 
+## *Flashcards*
+The local host for Flash Cards was 4200.
+
+## *Notes*
+The local host for notes was 4200.
+
+## *Environment*
+
+
+## *IDE Used*
 Microsoft Visual Code
 IntelliJ IDEA by JetBrains
-### *Material Used
-https://material.angular.io
+
+## *Material Used
+Our material for the website came from material.angular.io.
 
  
 ### *Authors*
-// Author & Scrum Master
+#### *Author & Scrum Master*
 
-  # [Jeffrey Saelee](https://github.com/Servation/)
-
-
-
-// Author & Team Leads
-
-  # [Connor Bullock](https://github.com/cbullock1/)
-
-  # [Thomas Lin](https://github.com/ttlin030735/)
-
-  # [Danny Vais](https://github.com/DannyVais/)
-
-  # [Nicholas Torres](https://github.com/nicktor19/)		
+##### [Jeffrey Saelee](https://github.com/Servation/)
 
 
 
-// Lead for the Presentation Documentation
+#### *Author & Team Leads*
 
-  # [Danny Vais](https://github.com/DannyVais/)
+##### [Connor Bullock](https://github.com/cbullock1/)
+
+##### [Thomas Lin](https://github.com/ttlin030735/)
+
+##### [Danny Vais](https://github.com/DannyVais/)
+
+##### [Nicholas Torres](https://github.com/nicktor19/)		
 
 
-// Lead for Read Me 
 
-  # [Lisa Lenhart](https://github.com/CodeFlareLisa/)
+### *Lead for the Presentation Documentation*
 
-  # [Yeison Bello](https://github.com/yeisonBello/)
+##### [Danny Vais](https://github.com/DannyVais/)
 
-  # [Jordan Casavecchia](https://github.com/HappyHysteria/)
+
+### *Lead for Read Me* 
+
+##### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
+
+##### [Yeison Bello](https://github.com/yeisonBello/)
+
+##### [Jordan Casavecchia](https://github.com/HappyHysteria/)
 		
-  # [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
+##### [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
 
-  # [Nacer Djabour](https://github.com/Nacerdj/)
+##### [Nacer Djabour](https://github.com/Nacerdj/)
 		
-  # [Manisha Goyal](https://github.com/GoyalMani/)
+##### [Manisha Goyal](https://github.com/GoyalMani/)
 
-  # [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
+##### [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
 
-  # [Daniel Moura](https://github.com/DMM2WEB/)
+##### [Daniel Moura](https://github.com/DMM2WEB/)
 				
-  # [Shane Smith](https://github.com/WorldKaizen/)
+##### [Shane Smith](https://github.com/WorldKaizen/)
 		
-  # [Danny Vais](https://github.com/DannyVais/)
+##### [Danny Vais](https://github.com/DannyVais/)
 		
-  # [Khine Zaw](http://github.com/kzaw7/)
+##### [Khine Zaw](http://github.com/kzaw7/)
 
-  # [Alejandro zubillaga](https://github.com/)
+##### [Alejandro zubillaga](https://github.com/)
  
-### *Environment*
+___
 
-<details><summary>*Roles & Responsibilities*</summary>
+
+<details><summary>Roles & Responsibilities</summary>
 <p>
 
 </p>
@@ -216,6 +222,8 @@ https://material.angular.io
 
 ### *Challenges*
 
+
+___
 ### *Screenshots*
 ![angular-material](https://user-images.githubusercontent.com/74020237/176029818-e8e4c250-65fd-4f20-a456-08da19d6ec2d.png)
 ![Trello](https://user-images.githubusercontent.com/74020237/176029825-723cbf66-1a8b-487f-a35b-fbe1b8f5520f.png)
@@ -230,7 +238,7 @@ https://material.angular.io
 ![users](https://user-images.githubusercontent.com/74020237/176029889-17e837fd-b247-4450-92d5-b16a218cc864.png)
 Tables in MySQL Database
 <img width="591" alt="Screen Shot 2022-06-27 at 3 05 02 PM" src="https://user-images.githubusercontent.com/74020237/176016961-b22adda0-6693-4625-927c-bb9ca23be39a.png">
-
+___
 ### *License*
      
      
