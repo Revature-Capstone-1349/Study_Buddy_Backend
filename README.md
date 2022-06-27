@@ -26,6 +26,86 @@
 ### **@Entity**      
       @Entity annotation defines that a class can be mapped to a table. And that is it, it is just a marker, like for example Serializable interface.
 
+###**@RequestBody**
+
+This annotation is applicable to handle methods of Spring controllers.This annotation indicates that Spring should deserialize a request body into an object.This object is passed as a handler method parameter.
+
+@RequestMapping("/api/users")
+@RequestMapping("/api/flashcards")
+@RequestMapping("/api/Notes")
+@RequestMapping("/api/Sets")
+
+###**@GetMapping
+
+The @GetMapping annotation is a specialized version of the @RequestMapping annotation that acts as 
+a shortcut for @RequestMapping(method=RequestMethod.GET).The @GetMapping annotated methods in the
+@Controller annotated classes handle the HTTP GET requests matched with the given URI expression.
+
+@GetMapping("/{id}")
+    public ResponseEntity<Notes> getNotesById(@PathVariable("id")Long id){
+        try{
+            Notes notes = notesService.getNotesById(id);
+            if(notes != null) {
+                return new ResponseEntity<>(notes, HttpStatus.OK);
+            }
+        }catch(Exception ignored){}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+    
+ ###** @PostMapping
+
+The @PostMapping is a Specialized version of the @RequestMapping annotation that acts as a shortcut
+for @RequestMapping(method=RequestMethod.POST). The @PostMapping annotated method in the @Controller annotated
+classes handle the HTTP POST requests matched with the given URI expression.
+
+@PostMapping
+    public ResponseEntity<Notes> addNotes(@RequestBody Notes notes) {
+        try{
+            User user = userService.getUserById(notes.getUserId());
+            Sets sets = setsService.getBySetId(notes.getSetId());
+            if (user != null && (sets == null || sets.getUserId().equals(notes.getUserId()))) {
+                return new ResponseEntity<>(notesService.addNotes(notes), HttpStatus.OK);
+            }
+
+  
+  ###**@PutMapping
+
+The @PutMapping is a composed annotation that acts as a shortcut 
+for @RequestMapping(method=RequestMethod.PUT). consumes-Narrow the primary mapping by media types 
+that can be consumed by the mapped handler.
+
+
+@PutMapping("/update")
+    public ResponseEntity<User> updateUser(@RequestBody User user) {
+        try {
+            User findUser = userService.getUserById(user.getUserId());
+            if(findUser != null){
+                return new ResponseEntity<>(userService.updateUser(user), HttpStatus.OK);
+            }
+        } catch (Exception ignore) {}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+    
+   ###** @DeleteMapping
+
+ The @DeleteMapping is a composed annotation that acts as a shortcut 
+for @RequestMapping(method=RequestMethod.DELETE).
+
+@DeleteMapping("/{fCardId}")
+    public ResponseEntity<?> deleteByFCardId(@PathVariable("fCardId") Long fCardId) {
+        try {
+            FlashCards flashCards = flashCardsService.getByfCardId(fCardId);
+            if(flashCards != null){
+                flashCardsService.deleteByfCardId(fCardId);
+                return new ResponseEntity<>(HttpStatus.OK);
+            }
+        } catch (Exception ignore) {}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+
+    
+
  ### *Login*
  http://localhost:4200/login
      
@@ -76,8 +156,6 @@ https://material.angular.io
 // Lead for Read Me 
 
   # [Lisa Lenhart](https://github.com/CodeFlareLisa/)
-  
-// Members 
 
   # [Yeison Bello](https://github.com/yeisonBello/)
 
