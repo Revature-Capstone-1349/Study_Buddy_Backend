@@ -42,7 +42,7 @@ public class NotesResource {
         try{
             User user = userService.getUserById(notes.getUserId());
             Sets sets = setsService.getBySetId(notes.getSetId());
-            if (user != null && (sets == null || sets.getUserId().equals(notes.getUserId()))) {
+            if (user != null && (sets == null || sets.getUserId().equals(notes.getUserId()) || sets.getPrivacy().equalsIgnoreCase("public"))) {
                 return new ResponseEntity<>(notesService.addNotes(notes), HttpStatus.OK);
             }
         }catch(Exception ignore){}

@@ -7,7 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @AllArgsConstructor
 @RestController
@@ -64,4 +66,17 @@ public class FlashCardsResource {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+    @GetMapping("/randomizeSet/{setId}")
+    public ResponseEntity<List<FlashCards>> randomizeInSet(@PathVariable("setId") Long setId){
+        try{
+            List<FlashCards> cardsListBySet = flashCardsService.getBysetId(setId);
+            List<FlashCards> randomizedCards = new ArrayList<>();
+            Random random = new Random();
+            while(cardsListBySet.size() != 0){
+                randomizedCards.add(cardsListBySet.remove(random.nextInt(cardsListBySet.size())));
+            }
+            return new ResponseEntity<>(randomizedCards, HttpStatus.OK);
+        }catch(Exception ignore){}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }
