@@ -13,16 +13,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class FlashCards {
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long fCardId;
-        private String term;
-        
-        private String def;
-
-        //@ManyToOne (fetch = FetchType.LAZY, optional = false)
-        //@JoinColumn(name= "setId", nullable = false)
-        private Long setId;
-
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long fCardId;
+    private String term;
+    private String def;
+    private Long setId;
 }

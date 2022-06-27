@@ -1,7 +1,9 @@
 package com.Revature.Study_Buddy_Backend.Controller;
 
 import com.Revature.Study_Buddy_Backend.Model.FlashCards;
+import com.Revature.Study_Buddy_Backend.Model.Sets;
 import com.Revature.Study_Buddy_Backend.Service.FlashCardsService;
+import com.Revature.Study_Buddy_Backend.Service.SetsService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +18,7 @@ import java.util.Random;
 @RequestMapping("/api/flashcards")
 public class FlashCardsResource {
     private FlashCardsService flashCardsService;
+    private SetsService setsService;
 
     @GetMapping
     public ResponseEntity<List<FlashCards>> FlashCardsList() {
@@ -76,6 +79,18 @@ public class FlashCardsResource {
                 randomizedCards.add(cardsListBySet.remove(random.nextInt(cardsListBySet.size())));
             }
             return new ResponseEntity<>(randomizedCards, HttpStatus.OK);
+        }catch(Exception ignore){}
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @GetMapping("/getOwner/{setId}")
+    public ResponseEntity<Long> getCardOwner(@PathVariable("setId") Long setId){
+        try{
+            Sets sets = setsService.getBySetId(setId);
+            System.out.println(sets);
+            if(sets != null){
+                return new ResponseEntity<>(sets.getUserId(), HttpStatus.OK);
+            }
         }catch(Exception ignore){}
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
