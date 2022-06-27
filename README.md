@@ -195,27 +195,27 @@ ___
 
 ## *Authors & Team Members*
 
-##### [Yeison Bello](https://github.com/yeisonBello/)
+#### [Yeison Bello](https://github.com/yeisonBello/)
 
-##### [Jordan Casavecchia](https://github.com/HappyHysteria/)
+#### [Jordan Casavecchia](https://github.com/HappyHysteria/)
 		
-##### [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
+#### [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
 
-##### [Nacer Djabour](https://github.com/Nacerdj/)
+#### [Nacer Djabour](https://github.com/Nacerdj/)
 		
-##### [Manisha Goyal](https://github.com/GoyalMani/)
+#### [Manisha Goyal](https://github.com/GoyalMani/)
 
-##### [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
+#### [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
 
-##### [Daniel Moura](https://github.com/DMM2WEB/)
+#### [Daniel Moura](https://github.com/DMM2WEB/)
 				
-##### [Shane Smith](https://github.com/WorldKaizen/)
+#### [Shane Smith](https://github.com/WorldKaizen/)
 		
-##### [Danny Vais](https://github.com/DannyVais/)
+#### [Danny Vais](https://github.com/DannyVais/)
 		
-##### [Khine Zaw](http://github.com/kzaw7/)
+#### [Khine Zaw](http://github.com/kzaw7/)
 
-##### [Alejandro zubillaga](https://github.com/)
+#### [Alejandro zubillaga](https://github.com/)
  
 ___
 
