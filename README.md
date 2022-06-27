@@ -147,8 +147,7 @@ so use the @Service annotation to indicate that a class belongs to that layer.
  http://localhost:4200/flash-cards
  ### *Notes*
  http://localhost:4200/notes
-### Get
-@GetMapping
+
 ### *IDE Used
 Microsoft Visual Code
 IntelliJ IDEA by JetBrains
