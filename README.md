@@ -2,7 +2,7 @@
 ## *Study Helper App*
 
 
-### *Technoligies*
+### *Technologies*
 
 ### *Dependecies*
 - Lombok Dev Tool /  Java annotation library, helps to reduce boiler plate code
