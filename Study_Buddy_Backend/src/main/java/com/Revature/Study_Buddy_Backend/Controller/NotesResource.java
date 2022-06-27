@@ -76,4 +76,9 @@ public class NotesResource {
     public ResponseEntity<List<Notes>> getNotesByUserId(@PathVariable("userId") Long userId) {
         return new ResponseEntity<>(notesService.getNotesByUserIds(userId), HttpStatus.OK);
     }
+
+    @GetMapping("/bySet/{setId}")
+    public ResponseEntity<List<Notes>> getNotesBySetId(@PathVariable("setId") Long setId){
+        return new ResponseEntity<>(notesService.getNotesBySetIds(setId), HttpStatus.OK);
+    }
 }

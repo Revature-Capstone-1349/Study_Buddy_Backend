@@ -36,4 +36,8 @@ public class NotesService {
     public List<Notes> getNotesByUserIds(Long userId){
         return notesRepo.findByUserId(userId);
     }
+
+    public List<Notes> getNotesBySetIds(Long setId){
+        return notesRepo.findBySetId(setId);
+    }
 }
