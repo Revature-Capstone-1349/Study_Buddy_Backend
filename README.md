@@ -163,35 +163,37 @@ Our material for the website came from material.angular.io.
 
 ___
  
-### *Authors*
-#### *Author & Scrum Master*
+## *Authors*
+### *Author & Scrum Master*
 
-##### [Jeffrey Saelee](https://github.com/Servation/)
-
-___
-
-#### *Author & Team Leads*
-
-##### [Connor Bullock](https://github.com/cbullock1/)
-
-##### [Thomas Lin](https://github.com/ttlin030735/)
-
-##### [Danny Vais](https://github.com/DannyVais/)
-
-##### [Nicholas Torres](https://github.com/nicktor19/)		
+#### [Jeffrey Saelee](https://github.com/Servation/)
 
 ___
 
-### *Lead for the Presentation Documentation*
+## *Author & Team Leads*
 
-##### [Danny Vais](https://github.com/DannyVais/)
+#### [Connor Bullock](https://github.com/cbullock1/)
+
+#### [Thomas Lin](https://github.com/ttlin030735/)
+
+#### [Danny Vais](https://github.com/DannyVais/)
+
+#### [Nicholas Torres](https://github.com/nicktor19/)		
+
 ___
 
-### *Lead for Read Me* 
+## *Lead for the Presentation Documentation*
 
-##### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
+#### [Danny Vais](https://github.com/DannyVais/)
+___
+
+## *Lead for Read Me* 
+
+#### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
 
 ___
+
+## *Authors & Team Members*
 
 ##### [Yeison Bello](https://github.com/yeisonBello/)
 
@@ -218,18 +220,18 @@ ___
 ___
 
 
-<details><summary>Roles & Responsibilities</summary>
+<details><summary><strong>Roles & Responsibilities</strong></summary>
 <p>
 
 </p>
 </details>
+---
 
-
-### *Challenges*
+## *Challenges*
 
 
 ___
-### *Screenshots*
+## *Screenshots*
 ![angular-material](https://user-images.githubusercontent.com/74020237/176029818-e8e4c250-65fd-4f20-a456-08da19d6ec2d.png)
 ![Trello](https://user-images.githubusercontent.com/74020237/176029825-723cbf66-1a8b-487f-a35b-fbe1b8f5520f.png)
 [ERDproj3.pdf](https://github.com/Revature-Capstone-1349/Study_Buddy_Backend/files/8995368/ERDproj3.pdf)
@@ -266,7 +268,7 @@ ___
 #### License Agreement:
 #### https://www.jetbrains.com/help/idea/installationguide.html#:~:text=Install%20IntelliJ%20IDEA%EF%BB%BF&text=IntelliJ%20IDEA%20is%20a%20cross,source%2C%20licensed%20under%20Apache%202.0
 ---
-### MySQL: Version
+### MySQL: Version 8.0.29
 #### License Agreement: 
 #### https://dev.mysql.com/doc/refman/8.0/en/preface.html
 ---
