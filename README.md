@@ -29,18 +29,18 @@ ___
 ## *The Annotations used for Java in IntelliJ*
 ### **@Autowired**
     Spring provides annotation-based auto-wiring by providing @Autowired annotation. It is used to autowire spring beans on setter methods, instance variables, and constructor. When we use @Autowired annotation, the spring container auto-wires the bean by matching data-type.
-### **@AllArgsConstructor**
+### *@AllArgsConstructor*
     Generates an all-args constructor. An all-args constructor requires one argument for every field in the class.
-### **@RestController**
+### *@RestController*
      It can be considered as a combination of @Controllerand @ResponseBody annotations. The @RestController annotation is itself annotated with the @ResponseBody annotation. It eliminates the need for annotating each method with @ResponseBody.
-### **@Data**
+### *@Data*
      It is a convenient shortcut annotation that bundles the features of @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor together.
-### **@NoArgsConstructor** 
+### *@NoArgsConstructor*
      The @NoArgsConstructor annotation is used to generate the no-argument constructor for a class. In this case, the class consists of final fields. Using this annotation makes the compiler throw a compile-time error. To overcome this, the annotation takes a parameter called force which, when set to be true, initializes the final fields 0 or false or null.
-### **@Entity**      
+### *@Entity*      
       @Entity annotation defines that a class can be mapped to a table. And that is it, it is just a marker, like for example Serializable interface.
 
-### **@RequestBody**
+### *@RequestBody*
 This annotation is applicable to handle methods of Spring controllers.This annotation indicates that Spring should deserialize a request body into an object.This object is passed as a handler method parameter.
 
 @RequestMapping("/api/users")
@@ -48,7 +48,7 @@ This annotation is applicable to handle methods of Spring controllers.This annot
 @RequestMapping("/api/Notes")
 @RequestMapping("/api/Sets")
 
-### **@GetMapping**
+### *@GetMapping*
 The @GetMapping annotation is a specialized version of the @RequestMapping annotation that acts as 
 a shortcut for @RequestMapping(method=RequestMethod.GET).The @GetMapping annotated methods in the
 @Controller annotated classes handle the HTTP GET requests matched with the given URI expression.
@@ -68,7 +68,7 @@ a shortcut for @RequestMapping(method=RequestMethod.GET).The @GetMapping annotat
     }
 ```    
     
-### **@PostMapping**
+### *@PostMapping*
 The @PostMapping is a Specialized version of the @RequestMapping annotation that acts as a shortcut
 for @RequestMapping(method=RequestMethod.POST). The @PostMapping annotated method in the @Controller annotated
 classes handle the HTTP POST requests matched with the given URI expression.
@@ -85,7 +85,7 @@ classes handle the HTTP POST requests matched with the given URI expression.
             }
 ```
   
-### **@PutMapping**
+### *@PutMapping*
 The @PutMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.PUT). consumes-Narrow the primary mapping by media types 
 that can be consumed by the mapped handler.
@@ -104,7 +104,7 @@ that can be consumed by the mapped handler.
     }
 ```    
     
-### **@DeleteMapping**
+### *@DeleteMapping*
 The @DeleteMapping is a composed annotation that acts as a shortcut 
 for @RequestMapping(method=RequestMethod.DELETE).
 
@@ -123,15 +123,15 @@ for @RequestMapping(method=RequestMethod.DELETE).
     }
 ```    
 
-### **@Bean**
+### *@Bean*
 It is a method-level annotation. It is an alternative of XML bean tag. It tells the method to produce a bean to be managed by Spring Container. 
 
-### **@Repository**
+### *@Repository*
 
 DAO or Repository classes usually represent the database access layer in an application,
 and should be annotated with @Repository.
 
-### **@Service**
+### *@Service*
 
 The business logic of an application usually resides within the service layer,
 so use the @Service annotation to indicate that a class belongs to that layer.
@@ -225,6 +225,7 @@ ___
 
 </p>
 </details>
+
 ---
 
 ## *Challenges*
