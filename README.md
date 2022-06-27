@@ -217,6 +217,17 @@ https://material.angular.io
 ### *Challenges*
 
 ### *Screenshots*
+![angular-material](https://user-images.githubusercontent.com/74020237/176029818-e8e4c250-65fd-4f20-a456-08da19d6ec2d.png)
+![Trello](https://user-images.githubusercontent.com/74020237/176029825-723cbf66-1a8b-487f-a35b-fbe1b8f5520f.png)
+[ERDproj3.pdf](https://github.com/Revature-Capstone-1349/Study_Buddy_Backend/files/8995368/ERDproj3.pdf)
+![google-fonts](https://user-images.githubusercontent.com/74020237/176029880-679bfccd-9734-4ad8-9c31-c145813ee4d9.png)
+![ERD-UML notation](https://user-images.githubusercontent.com/74020237/176029879-25c96195-30c5-464d-ad55-bd833820240f.png)![noteComponent](https://user-images.githubusercontent.com/74020237/176029878-bded1bf4-5f01-4f1a-bdf4-c053163661d2.png)
+
+![flash-cards](https://user-images.githubusercontent.com/74020237/176029887-6e996ff0-52ad-4e1e-b0e2-4b948dc31f31.png)
+
+![module-timer](https://user-images.githubusercontent.com/74020237/176029888-0d44fb70-3daf-4f9b-a06b-bb8a796d5c38.png)
+
+![users](https://user-images.githubusercontent.com/74020237/176029889-17e837fd-b247-4450-92d5-b16a218cc864.png)
 Tables in MySQL Database
 <img width="591" alt="Screen Shot 2022-06-27 at 3 05 02 PM" src="https://user-images.githubusercontent.com/74020237/176016961-b22adda0-6693-4625-927c-bb9ca23be39a.png">
 
