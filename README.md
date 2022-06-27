@@ -118,7 +118,19 @@ for @RequestMapping(method=RequestMethod.DELETE).
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+@Bean
 
+It is a method-level annotation. It is an alternative of XML bean tag. It tells the method to produce a bean to be managed by Spring Container. 
+
+@Repository
+
+DAO or Repository classes usually represent the database access layer in an application,
+and should be annotated with @Repository.
+
+@Service
+
+The business logic of an application usually resides within the service layer,
+so use the @Service annotation to indicate that a class belongs to that layer.
     
 
  ### *Login*
