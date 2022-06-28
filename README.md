@@ -189,7 +189,7 @@ ___
 
 ## *Lead for Read Me* 
 
-#### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
+#### [@Lisa Lenhart](https://github.com/CodeFlareLisa/)
 
 ___
 
