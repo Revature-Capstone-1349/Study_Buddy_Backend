@@ -191,6 +191,9 @@ ___
 
 #### [@Lisa Lenhart](https://github.com/CodeFlareLisa/)
 
+#### [Manisha Goyal](https://github.com/GoyalMani/)
+
+#### [Khine Zaw](http://github.com/kzaw7/)
 ___
 
 ## *Authors & Team Members*
@@ -202,8 +205,6 @@ ___
 #### [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
 
 #### [Nacer Djabour](https://github.com/Nacerdj/)
-		
-#### [Manisha Goyal](https://github.com/GoyalMani/)
 
 #### [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
 
@@ -213,8 +214,6 @@ ___
 		
 #### [Danny Vais](https://github.com/DannyVais/)
 		
-#### [Khine Zaw](http://github.com/kzaw7/)
-
 #### [Alejandro zubillaga](https://github.com/)
  
 ___
