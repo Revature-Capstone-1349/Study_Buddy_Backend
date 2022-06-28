@@ -136,14 +136,17 @@ and should be annotated with @Repository.
 
 The business logic of an application usually resides within the service layer,
 so use the @Service annotation to indicate that a class belongs to that layer.
-___    
+___  
+
+
+# *Front-End Components*
 
 ## *Login*
 - The "Login Button" will allow the user to log in.
 - If the user has registered, they can enter their Email and Password.
 - If the user has not created an account, registration is required by clicking "New User" to create an account.
   
-  ---
+---
   
 ## *Register*
 - The "Register Button" takes the new user to the Register page.
@@ -183,6 +186,8 @@ ___
 ## *IDE Used*
  - Microsoft Visual Code
  - IntelliJ IDEA by JetBrains
+
+---
 
 ## *Material Used*
 Our material for the website came from material.angular.io.
