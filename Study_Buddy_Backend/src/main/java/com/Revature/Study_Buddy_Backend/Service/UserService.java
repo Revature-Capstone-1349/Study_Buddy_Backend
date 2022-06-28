@@ -3,8 +3,6 @@ package com.Revature.Study_Buddy_Backend.Service;
 import com.Revature.Study_Buddy_Backend.Model.User;
 import com.Revature.Study_Buddy_Backend.Repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
