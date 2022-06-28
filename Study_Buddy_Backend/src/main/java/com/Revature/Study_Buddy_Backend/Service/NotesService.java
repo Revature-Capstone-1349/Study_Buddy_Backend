@@ -40,4 +40,6 @@ public class NotesService {
     public List<Notes> getNotesBySetIds(Long setId){
         return notesRepo.findBySetId(setId);
     }
+
+    public List<Notes> getNotesBySetIdAndUserId(Long setId, Long userId){return notesRepo.findBySetIdAndUserId(setId, userId); }
 }
