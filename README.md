@@ -11,6 +11,7 @@ ___
   - Visual Studio Code: Version 1.68.1
   - Node.js: Version 16.13.0
   - Material Angular: Version 14.0.2
+  - Bootstrap: Version 4.6
   - IntelliJ IDEA Community Edition: Version 2022.1.3
   - MySQL: Version 8.0.29
   - Git: Version 2.36.1
@@ -138,21 +139,46 @@ so use the @Service annotation to indicate that a class belongs to that layer.
 ___    
 
 ## *Login*
-The local host for login was 4200.
-     
+- The "Login Button" will allow the user to log in.
+- If the user has registered, they can enter their Email and Password.
+- If the user has not created an account, registration is required by clicking "New User" to create an account.
+  
+  ---
+  
 ## *Register*
-The local host for register was 4200.
+- The "Register Button" takes the new user to the Register page.
+- The register page allows the new user to fill in their Name, Email, and Password to create an account.
+- After the user enters their personal information and clicks on the "Registration Button," their information is saved, directing them back to the login screen. Suppose a previously registered user has an account. In that case, they can click the "Already a User" link, which will auto-direct back to the login screen.
+
+---
  
 ## *Timer*
+- Setting a Study-Buddy timer can be set by hours, minutes, and seconds.
+- "Snack Breaks" is an additional feature designed within the timer. 
+- After setting your timer, click on the "Save Button" to begin the timer.
 
+---
 
 ## *Sets*
+- Each user can make a set of flash cards.
+- The user can decide to share their sets with other users by selecting the public feature, or they can keep it private.  
+- All other users can view their sets if the set is 'set' to the public setting. The owner of the "set" is the only person allowed to change their set.
+
+---
  
 ## *Flashcards*
-The local host for Flash Cards was 4200.
+- A user can create, edit, and filter a set of virtual flashcards for a particular technology stack.
+- A user can go through a flashcard set, viewing the front half of the card, then flipping the card to see the second half.
+- An owner and a user can view all flashcard sets.
+
+---
 
 ## *Notes*
-The local host for notes was 4200.
+- A user can create, edit, and filter a set of virtual flashcards for a particular technology stack.
+- A user can go through a flashcard set, viewing the front half of the card, then flipping the card to see the second half.
+- An owner and a user can view all flashcard sets.
+
+___
 
 ## *IDE Used*
  - Microsoft Visual Code
@@ -189,7 +215,7 @@ ___
 
 ## *Lead for Read Me* 
 
-#### [@Lisa Lenhart](https://github.com/CodeFlareLisa/)
+#### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
 
 #### [Manisha Goyal](https://github.com/GoyalMani/)
 
@@ -263,6 +289,10 @@ ___
 ### Material Angular: Version 14.0.2
 #### License Agreement: 
 #### https://github.com/angular/components/blob/main/LICENSE
+---
+### Bootstrap: Version 4.6
+#### License Agreement:
+#### https://getbootstrap.com/docs/4.6/about/license/#it-requires-you-to
 ---
 ### IntelliJ IDEA Community Edition: Version 2022.1.3
 #### License Agreement:
