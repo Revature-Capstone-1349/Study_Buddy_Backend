@@ -252,7 +252,7 @@ ___
 		
 #### [Alejandro Zubillaga](https://github.com/alezubi)
 
-### [Jaquan Pitchford](https://github.com/whoswho94)
+#### [Jaquan Pitchford](https://github.com/whoswho94)
 
 #### [Daniel Moura](https://github.com/DMM2WEB)
  
