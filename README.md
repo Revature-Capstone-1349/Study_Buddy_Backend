@@ -393,7 +393,7 @@ ___
 
 ![flash-cards](https://user-images.githubusercontent.com/74020237/176029887-6e996ff0-52ad-4e1e-b0e2-4b948dc31f31.png)
 
-![module-timer](https://user-images.githubusercontent.com/74020237/176029888-0d44fb70-3daf-4f9b-a06b-bb8a796d5c38.png)
+![image](https://user-images.githubusercontent.com/71181253/176504245-76e15668-da58-4c08-b761-d92b10d73401.png)
 
 ![users](https://user-images.githubusercontent.com/74020237/176029889-17e837fd-b247-4450-92d5-b16a218cc864.png)
 Tables in MySQL Database
