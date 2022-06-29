@@ -154,12 +154,16 @@ ___
 - After the user enters their personal information and clicks on the "Registration Button," their information is saved, directing them back to the login screen. Suppose a previously registered user has an account. In that case, they can click the "Already a User" link, which will auto-direct back to the login screen.
 
 ---
- 
+___
 ## *Timer*
 - Setting a Study-Buddy timer can be set by hours, minutes, and seconds.
 - "Snack Breaks" is an additional feature designed within the timer. 
 - After setting your timer, click on the "Save Button" to begin the timer.
 
+### How Does the Timer Work For the User?
+It is a very intuitive tool with three buttons (play, stop, edit). Users can begin using the timer by clicking the "edit button." After selecting this button, a form will populate, allowing the user to set the time by hours and minutes for each category; "study-time" and "snack-time." After the user selects their custom time, the timer begins as they click on the "Create Button."  
+
+___
 ---
 
 ## *Sets*
