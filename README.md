@@ -258,13 +258,124 @@ ___
  
 ___
 
-
-<details><summary><strong>Roles & Responsibilities</strong></summary>
+<details><summary><strong>Jeffrey Saelee</strong></summary>
 <p>
-####	Jeffrey Saelee
-
+<li>Scrum Master for Agile App Development Software project for Study-Budy Study-Helper flashcard system by facilitating scrum meetings and decision-making processes.</li>
+ <li>Led the team leaders in connecting the backend with the front end and securing the components in Angular for the successful project.</li>  
+ <li>Monitored the progress and performance of each team by improving, planning, testing product, and organizing the demo showcase.</li>
+ <li>Set up the Github repositories with the teams.</li>
 </p>
 </details>
+<details><summary><strong>Connor Bullock</strong></summary>
+<p>
+ <li>Team leader of the Notes and Flash Card teams while successfully delegating the assigned tasks to complete the project. </li>  
+<li>Assisted and created the initial setup of Github repositories with the team leaders. </li>
+
+<li>Led the merging branches, combining team members' code, and pushing the code to Github.</li>
+<li>Completed all of the unassigned features of the Notes and Flashcards components. </li>
+</p>
+</details>
+<details><summary><strong>Thomas Lin Bullock</strong></summary>
+<p>
+<li>Team leader for the backend development team.</li>
+<li>Oversaw the production, error check, testing, and debugging.</li>
+<li>Communicated with Scrum Master and other team members regarding implementations for the backend.</li>
+</p>
+</details>
+<details><summary><strong>Danny Vais</strong></summary>
+<p>
+<li>Designed and coded Login, Registration, and Home page components along with session tracking and cookies with routing files to establish the pathways.</li>
+<li>Assisted, designed, and coded the HTML webpage with CSS styling, including the color scheme with customized fonts.</li>
+<li>Led the PowerPoint presentation team in creating the slides for all edits and styles.</li> 
+<li>Directed the entire project team in creating and forming the speaking order of the slides.</li>
+</p>
+</details>
+<details><summary><strong>Nicholas Torres</strong></summary>
+<p>
+<li>Team led for the Study-Buddy Timer feature while successfully delegating the assigned tasks to complete a functional timer.</li>
+<li>Communicated with Scrum Master with all updated daily progress while meeting deadline goals.</li>
+<li>Designed, coded, and assisted in implementing the Session Services, which keeps track of all logged-in and logged-out users.</li>
+</p>
+</details>
+<details><summary><strong>Lisa Lenhart</strong></summary>
+<p>
+<li>Team leader for the README.md and STARTUP teams and files while delegating the tasks—edited documents with Mark Down Language.</li>
+<li>Programmed the Sets of Sets by implementing Spring Boot in Java for the backend.</li> 
+<li>Tested the API while using HTTP request methods on Postman.</li>       
+<li>Drew the ERD Diagram</li>
+</p>
+</details>
+<details><summary><strong>Manisha Goyal</strong></summary>
+<p>
+<li>Programmed the Sets of Users by implementing Spring Boot in Java for the backend.</li> 
+<li>Tested the API while using HTTP request methods on Postman.</li> 
+<li>Edited, committed, and assisted in writing README.md and STARTUP.md files.</li> 
+</p>
+</details>
+<details><summary><strong>Khine Zaw</strong></summary>
+<p>
+<li>Programmed the Sets of Flashcards by implementing Spring Boot in Java for the backend.</li>  
+<li>Tested the API while using HTTP request methods on Postman.</li> 
+<li>Edited, committed, and assisted in writing README.md and STARTUP.md files.</li> 
+</p>
+</details>
+<details><summary><strong>Dovletgeldi Kossekov</strong></summary>
+<p>
+<li>Programmed the Sets of Notes by implementing Spring Boot in Java for the backend.</li> 
+<li>Tested the API while using HTTP request methods on Postman.</li> 
+<li>Edited, committed, and assisted in writing README.md and STARTUP.md files.</li> 
+</p>
+</details>
+<details><summary><strong>Daniel Moura</strong></summary>
+<p>
+- 
+</p>
+</details>
+<details><summary><strong>Joshua Alfaro</strong></summary>
+<p>
+<li>Provided documentation and licensing information for various parts of the project for the README.md files.</li>
+<li>Designed the Notes and assisted in the programming.</li>
+<li>Created multiple bits of data to be incorporated into the testing.</li>
+</p>
+</details>
+<details><summary><strong>Yeison Bello</strong></summary>
+<p>
+- 
+</p>	
+</details>
+<details><summary><strong>Jordan Casavecchia</strong></summary>
+<p>
+- 
+</p>	
+</details> 
+<details><summary><strong>Ibrahima Diallo</strong></summary>
+<p>
+- 
+</p>	
+</details> 
+<details><summary><strong>Nacer Djabour</strong></summary>
+<p>
+- 
+</p>	
+</details> 
+<details><summary><strong>Shane Smith Djabour</strong></summary>
+<p>
+- 
+</p>	
+</details> 
+<details><summary><strong>Nacer Djabour</strong></summary>
+<p>
+- 
+</p>	
+</details> 
+<details><summary><strong>Jaquan Pitchford</strong></summary>
+<p>
+<li>Assisted the front-end team in coding the project.</li>
+<li>Designed the first phase of the navbar.</li>
+<li>Styled the HTML footer for the home page by using CSS for the styling.</li>
+
+</p>	
+</details> 
 
 ---
 
