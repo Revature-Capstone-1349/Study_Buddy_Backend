@@ -276,7 +276,7 @@ ___
 <li>Completed all of the unassigned features of the Notes and Flashcards components. </li>
 </p>
 </details>
-<details><summary><strong>Thomas Lin Bullock</strong></summary>
+<details><summary><strong>Thomas Lin</strong></summary>
 <p>
 <li>Team leader for the backend development team.</li>
 <li>Oversaw the production, error check, testing, and debugging.</li>
@@ -359,7 +359,7 @@ ___
 - 
 </p>	
 </details> 
-<details><summary><strong>Shane Smith Djabour</strong></summary>
+<details><summary><strong>Shane Smith</strong></summary>
 <p>
 - 
 </p>	
