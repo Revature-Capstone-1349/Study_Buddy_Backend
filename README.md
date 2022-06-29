@@ -257,6 +257,7 @@ ___
 #### [Daniel Moura](https://github.com/DMM2WEB)
  
 ___
+## *Roles & Responsibilities*
 
 <details><summary><strong>Jeffrey Saelee</strong></summary>
 <p>
