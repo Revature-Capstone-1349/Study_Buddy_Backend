@@ -261,8 +261,8 @@ ___
 
 <details><summary><strong>Jeffrey Saelee</strong></summary>
 <p>
-<li>Scrum Master for Agile App Development Software project for Study-Buddy flashcard system by facilitating scrum meetings and decision-making processes.</li>
- <li>Led the team leaders in connecting the backend with the front end and securing the components in Angular for the successful project.</li>  
+<li>Scrum Master for Agile App Development Software project for Study-Budy Study-Helper flashcard system by facilitating scrum meetings and decision-making processes.</li>
+ <li>Led the team leaders in connecting the backend with the front end and securing the components in Angular for the successful project.</li>  
  <li>Monitored the progress and performance of each team by improving, planning, testing product, and organizing the demo showcase.</li>
  <li>Set up the Github repositories with the teams.</li>
 </p>
@@ -281,11 +281,12 @@ ___
 <li>Team leader for the backend development team.</li>
 <li>Oversaw the production, error check, testing, and debugging.</li>
 <li>Communicated with Scrum Master and other team members regarding implementations for the backend.</li>
+<li>Assisted and created the initial setup of Github repositories with the team leaders and led the merging branches, combining team members' code, and pushing the code to Github.</li> 
 </p>
 </details>
 <details><summary><strong>Nicholas Torres</strong></summary>
 <p>
-<li>Team led for the Study-Buddy Timer feature while successfully delegating the assigned tasks to complete a functional timer.</li>
+<li>Team leader for the Study-Buddy Timer feature while successfully delegating the assigned tasks to complete a functional timer.</li>
 <li>Communicated with Scrum Master with all updated daily progress while meeting deadline goals.</li>
 <li>Designed, coded, and implemented the Session Services, which keeps track of all logged-in and logged-out users. Asssisted in the login and register implementation.</li>
 </p>
@@ -367,6 +368,13 @@ ___
 <details><summary><strong>Nacer Djabour</strong></summary>
 <p>
 - 
+</p>	
+</details> 
+<details><summary><strong>Alejandro Zubillaga</strong></summary>
+<p>
+<li>Programmed functions for Flashcards and Notes in the website's front end for successful project completion.</li>
+<li>Created HTML pages, and stored the Users' information to display information back to Users about their input.</li>
+<li>Designed HTML pages in CSS to style the website pages in a presentable format.</li>
 </p>	
 </details> 
 <details><summary><strong>Jaquan Pitchford</strong></summary>
