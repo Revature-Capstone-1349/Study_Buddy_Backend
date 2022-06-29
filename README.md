@@ -261,7 +261,7 @@ ___
 
 <details><summary><strong>Jeffrey Saelee</strong></summary>
 <p>
-<li>Scrum Master for Agile App Development Software project for Study-Budy Study-Helper flashcard system by facilitating scrum meetings and decision-making processes.</li>
+<li>Scrum Master for Agile App Development Software project for Study-Buddy flashcard system by facilitating scrum meetings and decision-making processes.</li>
  <li>Led the team leaders in connecting the backend with the front end and securing the components in Angular for the successful project.</li>  
  <li>Monitored the progress and performance of each team by improving, planning, testing product, and organizing the demo showcase.</li>
  <li>Set up the Github repositories with the teams.</li>
