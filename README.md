@@ -174,6 +174,7 @@ ___
 - The user can decide to share their sets with other users by selecting the public feature, or they can keep it private.  
 - All other users can view their sets if the set is 'set' to the public setting. The owner of the "set" is the only person allowed to change their set.
 
+___
 ---
  
 ## *Flashcards*
