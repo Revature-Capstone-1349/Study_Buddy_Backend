@@ -283,19 +283,19 @@ ___
 <li>Communicated with Scrum Master and other team members regarding implementations for the backend.</li>
 </p>
 </details>
+<details><summary><strong>Nicholas Torres</strong></summary>
+<p>
+<li>Team led for the Study-Buddy Timer feature while successfully delegating the assigned tasks to complete a functional timer.</li>
+<li>Communicated with Scrum Master with all updated daily progress while meeting deadline goals.</li>
+<li>Designed, coded, and implemented the Session Services, which keeps track of all logged-in and logged-out users. Asssisted in the login and register implementation.</li>
+</p>
+</details>
 <details><summary><strong>Danny Vais</strong></summary>
 <p>
 <li>Designed and coded Login, Registration, and Home page components along with session tracking and cookies with routing files to establish the pathways.</li>
 <li>Assisted, designed, and coded the HTML webpage with CSS styling, including the color scheme with customized fonts.</li>
 <li>Led the PowerPoint presentation team in creating the slides for all edits and styles.</li> 
 <li>Directed the entire project team in creating and forming the speaking order of the slides.</li>
-</p>
-</details>
-<details><summary><strong>Nicholas Torres</strong></summary>
-<p>
-<li>Team led for the Study-Buddy Timer feature while successfully delegating the assigned tasks to complete a functional timer.</li>
-<li>Communicated with Scrum Master with all updated daily progress while meeting deadline goals.</li>
-<li>Designed, coded, and assisted in implementing the Session Services, which keeps track of all logged-in and logged-out users.</li>
 </p>
 </details>
 <details><summary><strong>Lisa Lenhart</strong></summary>
