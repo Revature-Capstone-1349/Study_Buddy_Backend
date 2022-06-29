@@ -26,7 +26,8 @@ ___
 - H2 Database / Provides a fast in-memory database that supports JDBC API and R2DBC access, with a small (2mb) footprint. Supports embedded and server modes as well as a browser based console application.
 
 ---
-
+## *Back-End Annotations used for Java in IntelliJ IDEA*
+---
 ## *The Annotations used for Java in IntelliJ*
 ### **@Autowired**
     Spring provides annotation-based auto-wiring by providing @Autowired annotation. It is used to autowire spring beans on setter methods, instance variables, and constructor. When we use @Autowired annotation, the spring container auto-wires the bean by matching data-type.
@@ -40,7 +41,6 @@ ___
      The @NoArgsConstructor annotation is used to generate the no-argument constructor for a class. In this case, the class consists of final fields. Using this annotation makes the compiler throw a compile-time error. To overcome this, the annotation takes a parameter called force which, when set to be true, initializes the final fields 0 or false or null.
 ### *@Entity*      
       @Entity annotation defines that a class can be mapped to a table. And that is it, it is just a marker, like for example Serializable interface.
-
 ### *@RequestBody*
 This annotation is applicable to handle methods of Spring controllers.This annotation indicates that Spring should deserialize a request body into an object.This object is passed as a handler method parameter.
 
@@ -155,6 +155,7 @@ ___
 
 ---
 ___
+
 ## *Timer*
 - Setting a Study-Buddy timer can be set by hours, minutes, and seconds.
 - "Snack Breaks" is an additional feature designed within the timer. 
@@ -162,7 +163,6 @@ ___
 
 ### How Does the Timer Work For the User?
 It is a very intuitive tool with three buttons (play, stop, edit). Users can begin using the timer by clicking the "edit button." After selecting this button, a form will populate, allowing the user to set the time by hours and minutes for each category; "study-time" and "snack-time." After the user selects their custom time, the timer begins as they click on the "Create Button."  
-
 ___
 ---
 
@@ -229,6 +229,13 @@ ___
 #### [Manisha Goyal](https://github.com/GoyalMani/)
 
 #### [Khine Zaw](http://github.com/kzaw7/)
+
+#### [Dovletgeldi Kossekov](https://github.com/dovletg/) 
+
+#### [Daniel Moura](https://github.com/DMM2WEB/)
+
+#### [Joshua Alfaro](https://github.com/Jalfaro1010?tab=repositories)
+
 ___
 
 ## *Authors & Team Members*
@@ -240,22 +247,21 @@ ___
 #### [Ibrahima Diallo](https://github.com/IbrahimaDIALLOBowe/)
 
 #### [Nacer Djabour](https://github.com/Nacerdj/)
-
-#### [Dovletgeldi Kossekov](https://github.com/dovletg/) 	
-
-#### [Daniel Moura](https://github.com/DMM2WEB/)
 				
 #### [Shane Smith](https://github.com/WorldKaizen/)
 		
-#### [Danny Vais](https://github.com/DannyVais/)
-		
-#### [Alejandro zubillaga](https://github.com/)
+#### [Alejandro Zubillaga](https://github.com/alezubi)
+
+### [Jaquan Pitchford](https://github.com/whoswho94)
+
+#### [Daniel Moura](https://github.com/DMM2WEB)
  
 ___
 
 
 <details><summary><strong>Roles & Responsibilities</strong></summary>
 <p>
+####	Jeffrey Saelee
 
 </p>
 </details>
