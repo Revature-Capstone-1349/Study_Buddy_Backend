@@ -146,12 +146,15 @@ ___
 - If the user has registered, they can enter their Email and Password.
 - If the user has not created an account, registration is required by clicking "New User" to create an account.
   
+  
 ---
+___
   
 ## *Register*
 - The "Register Button" takes the new user to the Register page.
 - The register page allows the new user to fill in their Name, Email, and Password to create an account.
 - After the user enters their personal information and clicks on the "Registration Button," their information is saved, directing them back to the login screen. Suppose a previously registered user has an account. In that case, they can click the "Already a User" link, which will auto-direct back to the login screen.
+
 
 ---
 ___
@@ -178,13 +181,34 @@ ___
 - A user can go through a flashcard set, viewing the front half of the card, then flipping the card to see the second half.
 - An owner and a user can view all flashcard sets.
 
+### How Does the Flashcards Work for the User?
+On the website, the User can choose from several options. Some of the options include the following:
+- create a new set
+- view and study any of their existing sets
+- edit a set
+- delete a set
+ Additionally, the User can choose to set the cards to either public or private. If the User selects private, all other users have view access only.
+
+
 ---
+___
 
 ## *Notes*
 - A user can create, edit, and filter a set of virtual flashcards for a particular technology stack.
 - A user can go through a flashcard set, viewing the front half of the card, then flipping the card to see the second half.
 - An owner and a user can view all flashcard sets.
 
+### How Does the Notes Work for the User?
+The User has several options to choose from to create Notes on the website. Some of the options include the following:
+- Users can make a new Note by selecting the button
+- Users can add a title and content for each Note they create.
+- Users can also add a category to their Notes.
+- Users can also add, edit, or delete their notes.
+- Users can only view their notes.
+- Users can have Notes that reference others' sets.
+- The older Notes will be displayed first when viewing notes.
+
+---
 ___
 
 ## *IDE Used*
