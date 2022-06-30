@@ -26,7 +26,7 @@ ___
 - H2 Database / Provides a fast in-memory database that supports JDBC API and R2DBC access, with a small (2mb) footprint. Supports embedded and server modes as well as a browser based console application.
 
 ---
-## *Back-End Annotations used for Java in IntelliJ IDEA*
+## *Back-End Annotations*
 ---
 ## *The Annotations used for Java in IntelliJ*
 ### *@Autowired*
@@ -292,7 +292,7 @@ ___
 </details>
 <details><summary><strong>Connor Bullock</strong></summary>
 <p>
- <li>Team leader of the Notes and Flashcard teams while successfully delegating the assigned tasks to complete the project.</li>  
+ <li>Team leader of the Notes and Flashcard teams.</li>  
 <li>Assisted and created the initial setup of Github repositories with the team leaders.</li>
 <li>Led the merging branches, combining team members' code, and pushing the code to Github.</li>
 <li>Completed all of the unassigned features of the Notes and the Flashcards components.</li>
@@ -416,9 +416,6 @@ ___
 </details> 
 
 ---
-
-## *Challenges*
-
 
 ___
 ## *Screenshots*
