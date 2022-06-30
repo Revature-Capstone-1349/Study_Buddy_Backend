@@ -26,7 +26,7 @@ ___
 - H2 Database / Provides a fast in-memory database that supports JDBC API and R2DBC access, with a small (2mb) footprint. Supports embedded and server modes as well as a browser based console application.
 
 ---
-## *Back-End Annotations used for Java in IntelliJ IDEA*
+## *Back-End Annotations*
 ---
 ## *The Annotations used for Java in IntelliJ*
 ### *@Autowired*
@@ -216,7 +216,6 @@ Our material for the website came from material.angular.io.
 
 ___
  
-## *Authors*
 ---
 
 
@@ -293,7 +292,7 @@ ___
 </details>
 <details><summary><strong>Connor Bullock</strong></summary>
 <p>
- <li>Team leader of the Notes and Flashcard teams while successfully delegating the assigned tasks to complete the project.</li>  
+ <li>Team leader of the Notes and Flashcard teams.</li>  
 <li>Assisted and created the initial setup of Github repositories with the team leaders.</li>
 <li>Led the merging branches, combining team members' code, and pushing the code to Github.</li>
 <li>Completed all of the unassigned features of the Notes and the Flashcards components.</li>
@@ -393,11 +392,14 @@ ___
 <li>Styled the HTML pages for Flashcards and Notes by using CSS and Bootstrap styling.</li>
 </p>	
 </details> 
+
 <details><summary><strong>Shane Smith</strong></summary>
 <p>
 <li>Added components of Navbar and login page for the front-end team.</li>
 <li>Assisted with adding the style of the details.</li>
 </p>	
+</details>
+
 <details><summary><strong>Alejandro Zubillaga</strong></summary>
 <p>
 <li>Programmed functions for Flashcards and Notes in the website's front-end for successful project completion.</li>
@@ -414,9 +416,6 @@ ___
 </details> 
 
 ---
-
-## *Challenges*
-
 
 ___
 ## *Screenshots*
@@ -469,14 +468,3 @@ ___
 ### Spring Boot: Version 2.7.1
 #### License Agreement:
 #### https://www.vmware.com/help/legal.html
-
-
-
-
-
-
-
-
-     
-     
- 
