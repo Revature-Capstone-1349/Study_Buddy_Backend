@@ -216,7 +216,6 @@ Our material for the website came from material.angular.io.
 
 ___
  
-## *Authors*
 ---
 
 
