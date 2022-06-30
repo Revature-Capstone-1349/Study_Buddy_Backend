@@ -352,9 +352,9 @@ ___
 </details>
 <details><summary><strong>Daniel Moura</strong></summary>
 <p>
-<li>Programmed and collaborated on the front-end team's design and programming functions for Register and User.</li>
+<li>Collaborated to code topics like Register at Front End with Team UI & Design.</li>
 <li>Formatted descriptions of Flashcards for the successful completion of the project.</li>
-<li>Contributed to the README files.</li>
+<li>Cooperated for Readme File with Team Documentation.</li>
 </p>
 </details>
 <details><summary><strong>Joshua Alfaro</strong></summary>
