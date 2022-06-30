@@ -424,7 +424,6 @@ ___
 ![users](https://user-images.githubusercontent.com/74020237/176029889-17e837fd-b247-4450-92d5-b16a218cc864.png)
 ![flash-cards](https://user-images.githubusercontent.com/74020237/176029887-6e996ff0-52ad-4e1e-b0e2-4b948dc31f31.png)
 ![image](https://user-images.githubusercontent.com/71181253/176504245-76e15668-da58-4c08-b761-d92b10d73401.png)
-
 ![noteComponent](https://user-images.githubusercontent.com/74020237/176029878-bded1bf4-5f01-4f1a-bdf4-c053163661d2.png)
 ![ERD-UML notation](https://user-images.githubusercontent.com/74020237/176029879-25c96195-30c5-464d-ad55-bd833820240f.png)
 ![google-fonts](https://user-images.githubusercontent.com/74020237/176029880-679bfccd-9734-4ad8-9c31-c145813ee4d9.png)
@@ -470,8 +469,6 @@ ___
 ### Spring Boot: Version 2.7.1
 #### License Agreement:
 #### https://www.vmware.com/help/legal.html
-
-
 
 
 
