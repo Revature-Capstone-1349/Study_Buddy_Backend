@@ -353,7 +353,9 @@ ___
 </details>
 <details><summary><strong>Daniel Moura</strong></summary>
 <p>
-- 
+<li>Programmed and collaborated on the front-end team's design and programming functions for Register and User.</li>
+<li>Formatted descriptions of Flashcards for the successful completion of the project.</li>
+<li>Contributed to the README files.</li>
 </p>
 </details>
 <details><summary><strong>Joshua Alfaro</strong></summary>
@@ -365,34 +367,37 @@ ___
 </details>
 <details><summary><strong>Yeison Bello</strong></summary>
 <p>
-- 
+<li>Designed, coded, and assisted teammates in developing the Timer features to complete the project.</li>
+<li>Assisted with implementation of the Timer features.</li>
+<li>Met deadline goals.</li>
 </p>	
 </details>
 <details><summary><strong>Jordan Casavecchia</strong></summary>
 <p>
-- 
+<li>Edited and created functions for Flashcards and Notes for the front-end team.</li>
+<li>Created HTML pages to develop UI, collected user input data, and posted data for viewing.</li>
+<li>Styled the pages with CSS for a clean and professional layout.</li>
 </p>	
 </details> 
 <details><summary><strong>Ibrahima Diallo</strong></summary>
 <p>
-- 
+<li>Designed, coded, and assisted teammates in developing the Timer features to complete the project.</li>
+<li>Assisted with implementation of the Timer features.</li>
+<li>Met deadline goals.</li>
 </p>	
 </details> 
 <details><summary><strong>Nacer Djabour</strong></summary>
 <p>
-- 
+<li>Assisted the front-end team in coding Flashcards and Notes for the successful completion of the project.</li>
+<li>Collaborated with team members in the design of Flashcards and Notes.</li>
+<li>Styled the HTML pages for Flashcards and Notes by using CSS and Bootstrap styling.</li>
 </p>	
 </details> 
 <details><summary><strong>Shane Smith</strong></summary>
 <p>
-- 
+<li>Added components of Navbar and login page for the front-end team.</li>
+<li>Assisted with adding the style of the details.</li>
 </p>	
-</details> 
-<details><summary><strong>Nacer Djabour</strong></summary>
-<p>
-- 
-</p>	
-</details> 
 <details><summary><strong>Alejandro Zubillaga</strong></summary>
 <p>
 <li>Programmed functions for Flashcards and Notes in the website's front-end for successful project completion.</li>
@@ -405,7 +410,6 @@ ___
 <li>Assisted the front-end team in coding the project.</li>
 <li>Designed the first phase of the navbar.</li>
 <li>Styled the HTML footer for the home page by using CSS for the styling.</li>
-
 </p>	
 </details> 
 
@@ -420,7 +424,7 @@ ___
 ![users](https://user-images.githubusercontent.com/74020237/176029889-17e837fd-b247-4450-92d5-b16a218cc864.png)
 ![flash-cards](https://user-images.githubusercontent.com/74020237/176029887-6e996ff0-52ad-4e1e-b0e2-4b948dc31f31.png)
 ![image](https://user-images.githubusercontent.com/71181253/176504245-76e15668-da58-4c08-b761-d92b10d73401.png)
-![ERDproj3.pdf](https://github.com/Revature-Capstone-1349/Study_Buddy_Backend/files/8995368/ERDproj3.pdf)
+
 ![noteComponent](https://user-images.githubusercontent.com/74020237/176029878-bded1bf4-5f01-4f1a-bdf4-c053163661d2.png)
 ![ERD-UML notation](https://user-images.githubusercontent.com/74020237/176029879-25c96195-30c5-464d-ad55-bd833820240f.png)
 ![google-fonts](https://user-images.githubusercontent.com/74020237/176029880-679bfccd-9734-4ad8-9c31-c145813ee4d9.png)
