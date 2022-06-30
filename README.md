@@ -393,11 +393,14 @@ ___
 <li>Styled the HTML pages for Flashcards and Notes by using CSS and Bootstrap styling.</li>
 </p>	
 </details> 
+
 <details><summary><strong>Shane Smith</strong></summary>
 <p>
 <li>Added components of Navbar and login page for the front-end team.</li>
 <li>Assisted with adding the style of the details.</li>
 </p>	
+</details>
+
 <details><summary><strong>Alejandro Zubillaga</strong></summary>
 <p>
 <li>Programmed functions for Flashcards and Notes in the website's front-end for successful project completion.</li>
