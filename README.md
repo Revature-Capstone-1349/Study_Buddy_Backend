@@ -29,8 +29,8 @@ ___
 ## *Back-End Annotations used for Java in IntelliJ IDEA*
 ---
 ## *The Annotations used for Java in IntelliJ*
-### **@Autowired**
-    Spring provides annotation-based auto-wiring by providing @Autowired annotation. It is used to autowire spring beans on setter methods, instance variables, and constructor. When we use @Autowired annotation, the spring container auto-wires the bean by matching data-type.
+### *@Autowired*
+     Spring provides annotation-based auto-wiring by providing @Autowired annotation. It is used to autowire spring beans on setter methods, instance variables, and constructor. When we use @Autowired annotation, the spring container auto-wires the bean by matching data-type.
 ### *@AllArgsConstructor*
     Generates an all-args constructor. An all-args constructor requires one argument for every field in the class.
 ### *@RestController*
@@ -44,10 +44,10 @@ ___
 ### *@RequestBody*
 This annotation is applicable to handle methods of Spring controllers.This annotation indicates that Spring should deserialize a request body into an object.This object is passed as a handler method parameter.
 
-@RequestMapping("/api/users")
-@RequestMapping("/api/flashcards")
-@RequestMapping("/api/Notes")
-@RequestMapping("/api/Sets")
+- @RequestMapping("/api/users")
+- @RequestMapping("/api/flashcards")
+- @RequestMapping("/api/Notes")
+- @RequestMapping("/api/Sets")
 
 ### *@GetMapping*
 The @GetMapping annotation is a specialized version of the @RequestMapping annotation that acts as 
@@ -87,9 +87,7 @@ classes handle the HTTP POST requests matched with the given URI expression.
 ```
   
 ### *@PutMapping*
-The @PutMapping is a composed annotation that acts as a shortcut 
-for @RequestMapping(method=RequestMethod.PUT). consumes-Narrow the primary mapping by media types 
-that can be consumed by the mapped handler.
+The @PutMapping is a composed annotation that acts as a shortcut for @RequestMapping(method=RequestMethod.PUT) which consumes-narrow the primary mapping by media types that can be consumed by the mapped handler.
 
 #### Sample Code of @PutMapping ####
 ```java
@@ -106,8 +104,7 @@ that can be consumed by the mapped handler.
 ```    
     
 ### *@DeleteMapping*
-The @DeleteMapping is a composed annotation that acts as a shortcut 
-for @RequestMapping(method=RequestMethod.DELETE).
+The @DeleteMapping is a composed annotation that acts as a shortcut for @RequestMapping(method=RequestMethod.DELETE).
 
 #### Sample Code of @DeleteMapping ####
 ```java
@@ -125,35 +122,31 @@ for @RequestMapping(method=RequestMethod.DELETE).
 ```    
 
 ### *@Bean*
-It is a method-level annotation. It is an alternative of XML bean tag. It tells the method to produce a bean to be managed by Spring Container. 
+It is a method-level annotation. It is an alternative of XML bean tag. It tells the method to produce a bean to be managed by the Spring Container. 
 
 ### *@Repository*
-
-DAO or Repository classes usually represent the database access layer in an application,
-and should be annotated with @Repository.
+DAO or Repository classes usually represent the database access layer in an application and should be annotated with @Repository.
 
 ### *@Service*
-
-The business logic of an application usually resides within the service layer,
-so use the @Service annotation to indicate that a class belongs to that layer.
+The business logic of an application usually resides within the service layer. Use the @Service annotation to indicate that a class belongs to that layer.
 ___  
 
 
 # *Front-End Components*
 
 ## *Login*
-- The "Login Button" will allow the user to log in.
-- If the user has registered, they can enter their Email and Password.
-- If the user has not created an account, registration is required by clicking "New User" to create an account.
+- The "Login Button" will allow the User to log in.
+- If the User has registered, they can enter their Email and Password.
+- If the User has not created an account, registration is required by clicking "New User" to create an account.
   
   
 ---
 ___
   
 ## *Register*
-- The "Register Button" takes the new user to the Register page.
-- The register page allows the new user to fill in their Name, Email, and Password to create an account.
-- After the user enters their personal information and clicks on the "Registration Button," their information is saved, directing them back to the login screen. Suppose a previously registered user has an account. In that case, they can click the "Already a User" link, which will auto-direct back to the login screen.
+- The "Register Button" takes the new User to the Register page.
+- The register page allows the new User to fill in their Name, Email, and Password to create an account.
+- After the User enters their personal information and clicks on the "Registration Button," their information is saved, directing them back to the login screen. Suppose a previously registered User has an account. In that case, they can click the "Already a User" link, which will auto-direct back to the login screen.
 
 
 ---
@@ -161,47 +154,47 @@ ___
 
 ## *Timer*
 - Setting a Study-Buddy timer can be set by hours, minutes, and seconds.
-- "Snack Breaks" is an additional feature designed within the timer. 
+- "Snack Break" is an additional feature designed within the timer. 
 - After setting your timer, click on the "Save Button" to begin the timer.
 
 ### How Does the Timer Work For the User?
-It is a very intuitive tool with three buttons (play, stop, edit). Users can begin using the timer by clicking the "edit button." After selecting this button, a form will populate, allowing the user to set the time by hours and minutes for each category; "study-time" and "snack-time." After the user selects their custom time, the timer begins as they click on the "Create Button."  
+It is a very intuitive tool with three buttons (play, stop, and edit). Users can begin using the timer by clicking the "Edit Button." After selecting this button, a form will populate, allowing the User to set the timer by hours and minutes for each category: "Study-Time" and "Snack-Time." After the User selects their custom time, the timer begins as they click on the "Create Button."  
 ___
 ---
 
 ## *Sets*
-- Each user can make a set of flash cards.
-- The user can decide to share their sets with other users by selecting the public feature, or they can keep it private.  
-- All other users can view their sets if the set is 'set' to the public setting. The owner of the "set" is the only person allowed to change their set.
+- Each User can make a set of flash cards.
+- The User can decide to share their Sets with other Users by selecting the public feature, or they can keep it set to private.  
+- All other Users can view their sets if the set is 'Set' to the public setting. The owner of the "set" is the only person allowed to change their set.
 
 ___
 ---
  
 ## *Flashcards*
-- A user can create, edit, and filter a set of virtual flashcards for a particular technology stack.
-- A user can go through a flashcard set, viewing the front half of the card, then flipping the card to see the second half.
-- An owner and a user can view all flashcard sets.
+- A User can create, edit, and filter a set of virtual flashcards for a particular technology stack.
+- A User can go through a flashcard set, viewing the front-half of the flashcard, then flipping the card to see the second-half.
+- An owner and a User can view all flashcard sets.
 
 ### How Does the Flashcards Work for the User?
 On the website, the User can choose from several options. Some of the options include the following:
-- create a new set
-- view and study any of their existing sets
-- edit a set
-- delete a set
- Additionally, the User can choose to set the cards to either public or private. If the User selects private, all other users have view access only.
+- Create a new set
+- View and study any of their existing sets
+- Edit a set
+- Delete a set
+ Additionally, the User can choose to set the cards to either public or private. If the User selects private, all other Users have view access only.
 
 
 ---
 ___
 
 ## *Notes*
-- A user can create, edit, and filter a set of virtual flashcards for a particular technology stack.
-- A user can go through a flashcard set, viewing the front half of the card, then flipping the card to see the second half.
-- An owner and a user can view all flashcard sets.
+- A User can create, edit, and filter a set of virtual flashcards for a particular technology stack.
+- A User can go through a flashcard set, viewing the front half of the card, then flipping the card to see the second half.
+- An owner and a User can view all flashcard sets.
 
 ### How Does the Notes Work for the User?
 The User has several options to choose from to create Notes on the website. Some of the options include the following:
-- Users can make a new Note by selecting the button
+- Users can make a new Note by selecting the button.
 - Users can add a title and content for each Note they create.
 - Users can also add a category to their Notes.
 - Users can also add, edit, or delete their notes.
@@ -224,13 +217,16 @@ Our material for the website came from material.angular.io.
 ___
  
 ## *Authors*
-### *Author & Scrum Master*
+---
+
+
+## *Author & Scrum Master*
 
 #### [Jeffrey Saelee](https://github.com/Servation/)
 
 ___
 
-## *Author & Team Leads*
+## *Authors & Team Leads*
 
 #### [Connor Bullock](https://github.com/cbullock1/)
 
@@ -242,18 +238,22 @@ ___
 
 ___
 
-## *Lead for the Presentation Documentation*
+## *Author and Team Leader for the Presentation Documentation*
 
 #### [Danny Vais](https://github.com/DannyVais/)
 ___
 
-## *Lead for Read Me* 
+## *Author and Team Leader for ReadMe and StartUp Files* 
 
 #### [Lisa Lenhart](https://github.com/CodeFlareLisa/)
 
-#### [Manisha Goyal](https://github.com/GoyalMani/)
+___
+
+## *Authors & Team Members for ReadMe and StartUp Files*
 
 #### [Khine Zaw](http://github.com/kzaw7/)
+
+#### [Manisha Goyal](https://github.com/GoyalMani/)
 
 #### [Dovletgeldi Kossekov](https://github.com/dovletg/) 
 
@@ -279,26 +279,24 @@ ___
 
 #### [Jaquan Pitchford](https://github.com/whoswho94)
 
-#### [Daniel Moura](https://github.com/DMM2WEB)
- 
 ___
+---
 ## *Roles & Responsibilities*
 
 <details><summary><strong>Jeffrey Saelee</strong></summary>
 <p>
 <li>Scrum Master for Agile App Development Software project for Study-Budy Study-Helper flashcard system by facilitating scrum meetings and decision-making processes.</li>
- <li>Led the team leaders in connecting the backend with the front end and securing the components in Angular for the successful project.</li>  
+ <li>Led the team leaders in connecting the backend with the front-end and securing the components in Angular for the successful project.</li>  
  <li>Monitored the progress and performance of each team by improving, planning, testing product, and organizing the demo showcase.</li>
- <li>Set up the Github repositories with the teams.</li>
+ <li>Set up the Github repositories with the leaders of the team.</li>
 </p>
 </details>
 <details><summary><strong>Connor Bullock</strong></summary>
 <p>
- <li>Team leader of the Notes and Flash Card teams while successfully delegating the assigned tasks to complete the project. </li>  
-<li>Assisted and created the initial setup of Github repositories with the team leaders. </li>
-
+ <li>Team leader of the Notes and Flashcard teams while successfully delegating the assigned tasks to complete the project.</li>  
+<li>Assisted and created the initial setup of Github repositories with the team leaders.</li>
 <li>Led the merging branches, combining team members' code, and pushing the code to Github.</li>
-<li>Completed all of the unassigned features of the Notes and Flashcards components. </li>
+<li>Completed all of the unassigned features of the Notes and the Flashcards components.</li>
 </p>
 </details>
 <details><summary><strong>Thomas Lin</strong></summary>
@@ -326,22 +324,22 @@ ___
 </details>
 <details><summary><strong>Lisa Lenhart</strong></summary>
 <p>
-<li>Team leader for the README.md and STARTUP teams and files while delegating the tasks—edited documents with Mark Down Language.</li>
+<li>Team leader for the README.md and STARTUP.md teams. Delegated tasks to team members while preforming the edited documents with Markdown Language, committed the changed to Github</li>
 <li>Programmed the Sets of Sets by implementing Spring Boot in Java for the backend.</li> 
-<li>Tested the API while using HTTP request methods on Postman.</li>       
+<li>Tested the API while using HTTP request methods on Postman.</li>
 <li>Drew the ERD Diagram</li>
-</p>
-</details>
-<details><summary><strong>Manisha Goyal</strong></summary>
-<p>
-<li>Programmed the Sets of Users by implementing Spring Boot in Java for the backend.</li> 
-<li>Tested the API while using HTTP request methods on Postman.</li> 
-<li>Edited, committed, and assisted in writing README.md and STARTUP.md files.</li> 
 </p>
 </details>
 <details><summary><strong>Khine Zaw</strong></summary>
 <p>
 <li>Programmed the Sets of Flashcards by implementing Spring Boot in Java for the backend.</li>  
+<li>Tested the API while using HTTP request methods on Postman.</li> 
+<li>Edited, committed, and assisted in writing README.md and STARTUP.md files.</li> 
+</p>
+</details>
+<details><summary><strong>Manisha Goyal</strong></summary>
+<p>
+<li>Programmed the Sets of Users by implementing Spring Boot in Java for the backend.</li> 
 <li>Tested the API while using HTTP request methods on Postman.</li> 
 <li>Edited, committed, and assisted in writing README.md and STARTUP.md files.</li> 
 </p>
@@ -397,7 +395,7 @@ ___
 </details> 
 <details><summary><strong>Alejandro Zubillaga</strong></summary>
 <p>
-<li>Programmed functions for Flashcards and Notes in the website's front end for successful project completion.</li>
+<li>Programmed functions for Flashcards and Notes in the website's front-end for successful project completion.</li>
 <li>Created HTML pages, and stored the Users' information to display information back to Users about their input.</li>
 <li>Designed HTML pages in CSS to style the website pages in a presentable format.</li>
 </p>	
@@ -418,19 +416,19 @@ ___
 
 ___
 ## *Screenshots*
-![angular-material](https://user-images.githubusercontent.com/74020237/176029818-e8e4c250-65fd-4f20-a456-08da19d6ec2d.png)
 ![Trello](https://user-images.githubusercontent.com/74020237/176029825-723cbf66-1a8b-487f-a35b-fbe1b8f5520f.png)
-[ERDproj3.pdf](https://github.com/Revature-Capstone-1349/Study_Buddy_Backend/files/8995368/ERDproj3.pdf)
-![google-fonts](https://user-images.githubusercontent.com/74020237/176029880-679bfccd-9734-4ad8-9c31-c145813ee4d9.png)
-![ERD-UML notation](https://user-images.githubusercontent.com/74020237/176029879-25c96195-30c5-464d-ad55-bd833820240f.png)![noteComponent](https://user-images.githubusercontent.com/74020237/176029878-bded1bf4-5f01-4f1a-bdf4-c053163661d2.png)
-
-![flash-cards](https://user-images.githubusercontent.com/74020237/176029887-6e996ff0-52ad-4e1e-b0e2-4b948dc31f31.png)
-
-![image](https://user-images.githubusercontent.com/71181253/176504245-76e15668-da58-4c08-b761-d92b10d73401.png)
-
 ![users](https://user-images.githubusercontent.com/74020237/176029889-17e837fd-b247-4450-92d5-b16a218cc864.png)
+![flash-cards](https://user-images.githubusercontent.com/74020237/176029887-6e996ff0-52ad-4e1e-b0e2-4b948dc31f31.png)
+![image](https://user-images.githubusercontent.com/71181253/176504245-76e15668-da58-4c08-b761-d92b10d73401.png)
+![ERDproj3.pdf](https://github.com/Revature-Capstone-1349/Study_Buddy_Backend/files/8995368/ERDproj3.pdf)
+![noteComponent](https://user-images.githubusercontent.com/74020237/176029878-bded1bf4-5f01-4f1a-bdf4-c053163661d2.png)
+![ERD-UML notation](https://user-images.githubusercontent.com/74020237/176029879-25c96195-30c5-464d-ad55-bd833820240f.png)
+![google-fonts](https://user-images.githubusercontent.com/74020237/176029880-679bfccd-9734-4ad8-9c31-c145813ee4d9.png)
+![angular-material](https://user-images.githubusercontent.com/74020237/176029818-e8e4c250-65fd-4f20-a456-08da19d6ec2d.png)
+
 Tables in MySQL Database
 <img width="591" alt="Screen Shot 2022-06-27 at 3 05 02 PM" src="https://user-images.githubusercontent.com/74020237/176016961-b22adda0-6693-4625-927c-bb9ca23be39a.png">
+___
 ___
 ## *License*
 
